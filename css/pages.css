@@ -2839,29 +2839,6 @@
 .map__card span { font-size: .84rem; color: var(--c-muted); }
 .map__card .btn { margin-left: auto; }
 
-.toast {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 95;
-  display: none;
-  align-items: flex-start;
-  gap: 14px;
-  max-width: 380px;
-  padding: 18px 20px;
-  border-radius: var(--r-lg);
-  background: var(--c-forest-900);
-  color: var(--c-sage-200);
-  box-shadow: var(--sh-lg);
-}
-
-.toast:target { display: flex; animation: rise .5s var(--ease) both; }
-.toast .icon { color: var(--c-sage-300); margin-top: 2px; }
-.toast strong { display: block; color: var(--c-cream-100); }
-.toast p { margin-top: 2px; font-size: .86rem; color: var(--c-sage-300); }
-.toast a { margin-left: auto; color: var(--c-sage-400); }
-.toast a:hover { color: var(--c-white); }
-
 .hours { display: grid; gap: 8px; margin-top: 12px; font-size: .9rem; }
 .hours div { display: flex; justify-content: space-between; gap: 16px; }
 .hours dt { color: var(--c-muted); }
@@ -3263,5 +3240,4 @@
   .author-box { flex-direction: column; }
 
   .social-login { grid-template-columns: 1fr; }
-  .toast { left: 16px; right: 16px; bottom: 16px; }
 }

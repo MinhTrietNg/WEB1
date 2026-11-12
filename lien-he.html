@@ -54,10 +54,10 @@
           <label for="nav-toggle" class="icon-btn" aria-label="Đóng menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></label>
         </div>
         <div class="nav__search-mobile">
-          <form class="search" action="san-pham.html" role="search">
+          <div class="search" role="search">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
             <input type="search" name="q" placeholder="Tìm cây, chậu, phụ kiện…" aria-label="Tìm kiếm sản phẩm">
-          </form>
+          </div>
         </div>
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="index.html">Trang chủ</a></li>
@@ -113,10 +113,10 @@
       <label for="nav-toggle" class="nav-overlay" aria-hidden="true"></label>
 
       <div class="header__actions">
-        <form class="search search--desktop" action="san-pham.html" role="search">
+        <div class="search search--desktop" role="search">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input type="search" name="q" placeholder="Tìm cây, chậu…" aria-label="Tìm kiếm sản phẩm">
-        </form>
+        </div>
         <a href="dang-nhap.html" class="icon-btn icon-btn--account" aria-label="Tài khoản"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
         <a href="dang-nhap.html" class="icon-btn" aria-label="Danh sách yêu thích (2)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.4-9.2C1.2 7.9 3.4 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.6 0 5.8 3.4 4.4 6.8-1.9 4.6-9.4 9.2-9.4 9.2z"/></svg><span class="count">2</span></a>
         <a href="gio-hang.html" class="icon-btn" aria-label="Giỏ hàng (3 sản phẩm)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9L5 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="count">3</span></a>
@@ -155,7 +155,7 @@
             <span class="care-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8.5 9h4l-4 4h4M15 9v4"/></svg></span>
             <h3>Bác sĩ cây</h3>
             <p>Gửi ảnh cây qua Zalo, phản hồi trong 1 giờ.</p>
-            <a href="#">Zalo: 0909 686 868</a>
+            <a>Zalo: 0909 686 868</a>
           </article>
           <article class="contact-card">
             <span class="care-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
@@ -171,7 +171,7 @@
 
     <section class="section section--tight">
       <div class="container contact">
-        <form class="form-card" action="lien-he.html#da-gui" method="get">
+        <div class="form-card">
           <h2>Gửi lời nhắn cho <em>Lục Viên</em></h2>
           <p>Chúng tôi sẽ phản hồi trong vòng 2 giờ làm việc.</p>
           <div class="form-grid">
@@ -190,9 +190,9 @@
             </fieldset>
             <div class="field span-2"><label for="c-msg">Nội dung</label><textarea class="textarea" id="c-msg" placeholder="Kể cho chúng tôi về không gian của bạn: diện tích, hướng cửa sổ, ngân sách…"></textarea></div>
             <label class="check span-2"><input type="checkbox"> Tôi đồng ý để Lục Viên liên hệ lại qua số điện thoại đã cung cấp.</label>
-            <div class="span-2"><button type="submit" class="btn btn--clay btn--lg">Gửi lời nhắn <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+            <div class="span-2"><button type="button" class="btn btn--clay btn--lg">Gửi lời nhắn <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
           </div>
-        </form>
+        </div>
 
         <!-- Sơ đồ vị trí vẽ bằng CSS, không nhúng dịch vụ bản đồ bên ngoài -->
         <div class="map" id="ban-do" role="img" aria-label="Sơ đồ vị trí showroom Lục Viên tại 24 Đường Hoa Sữa, Quận 3">
@@ -204,7 +204,7 @@
           <div class="map__card">
             <img src="images/shelf.jpg" alt="" width="64" height="64">
             <div><strong>Lục Viên Showroom</strong><span>3 tầng cây xanh · Có chỗ đậu xe máy</span></div>
-            <a href="tel:19006868" class="btn btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3.5l2 5-2.5 1.5a11 11 0 0 0 6 6l1.5-2.5 5 2V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg> Gọi hỏi đường</a>
+            <a class="btn btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3.5l2 5-2.5 1.5a11 11 0 0 0 6 6l1.5-2.5 5 2V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg> Gọi hỏi đường</a>
           </div>
         </div>
       </div>
@@ -237,13 +237,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Thông báo hiện khi URL có #da-gui (sau khi gửi form) -->
-    <div class="toast" id="da-gui" role="status">
-      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>
-      <div><strong>Đã gửi lời nhắn!</strong><p>Cảm ơn bạn. Lục Viên sẽ gọi lại trong vòng 2 giờ làm việc.</p></div>
-      <a href="#" aria-label="Đóng thông báo"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></a>
-    </div>
   </main>
 
   <footer class="site-footer">
@@ -255,10 +248,10 @@
           <p>Không spam. Chỉ những điều giúp góc xanh của bạn tươi tốt hơn.</p>
         </div>
         <div>
-          <form class="subscribe" action="index.html" method="get">
+          <div class="subscribe">
             <input type="text" name="email" placeholder="Địa chỉ email của bạn" aria-label="Địa chỉ email">
-            <button type="submit" class="btn btn--light">Đăng ký <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          </form>
+            <button type="button" class="btn btn--light">Đăng ký <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
           <p class="subscribe-note">Tặng ngay mã giảm 10% cho đơn đầu tiên · Hủy đăng ký bất cứ lúc nào.</p>
         </div>
       </div>
@@ -271,10 +264,10 @@
           </a>
           <p>Vườn ươm và cửa hàng cây cảnh tại Sài Gòn. Chúng tôi tuyển chọn từng chậu cây khỏe mạnh, phối chậu gốm thủ công và đồng hành cùng bạn suốt hành trình chăm cây.</p>
           <div class="socials">
-            <a href="#" aria-label="Facebook"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2.5H7.5v4H10V21h4v-6.5h2.7l.8-4H14V8.5c0-.3.2-.5.5-.5z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></a>
-            <a href="#" aria-label="TikTok"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.5v11a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3.5c.6 2.6 2.4 4.4 5 4.6"/></svg></a>
-            <a href="#" aria-label="YouTube"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.5 9.5 4 2.5-4 2.5z"/></svg></a>
+            <a aria-label="Facebook"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2.5H7.5v4H10V21h4v-6.5h2.7l.8-4H14V8.5c0-.3.2-.5.5-.5z"/></svg></a>
+            <a aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></a>
+            <a aria-label="TikTok"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.5v11a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3.5c.6 2.6 2.4 4.4 5 4.6"/></svg></a>
+            <a aria-label="YouTube"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.5 9.5 4 2.5-4 2.5z"/></svg></a>
           </div>
         </div>
         <div>

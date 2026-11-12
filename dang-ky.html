@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pages.css">
 </head>
-<body class="page-auth">
+<body class="page-auth" id="thanh-toan">
   <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
 
   <div class="topbar">
@@ -135,9 +135,17 @@
 
     <div class="auth__panel">
       <div class="auth__box">
+        <p class="auth__notice">Bạn cần có tài khoản để tiếp tục thanh toán.</p>
+
         <div class="auth__tabs">
-          <a href="dang-nhap.html">Đăng nhập</a>
-          <a href="dang-ky.html" class="is-active" aria-current="page">Tạo tài khoản</a>
+          <span class="go go--home">
+            <a href="dang-nhap.html">Đăng nhập</a>
+            <a href="dang-ky.html" class="is-active" aria-current="page">Tạo tài khoản</a>
+          </span>
+          <span class="go go--pay">
+            <a href="dang-nhap.html#thanh-toan">Đăng nhập</a>
+            <a href="dang-ky.html#thanh-toan" class="is-active" aria-current="page">Tạo tài khoản</a>
+          </span>
         </div>
 
         <div class="auth__form auth__form--register">
@@ -151,7 +159,8 @@
             <div class="field"><label for="r-email">Email</label><input class="input" id="r-email" type="text" autocomplete="email" placeholder="ban@email.com"></div>
             <div class="field"><label for="r-pass">Mật khẩu</label><input class="input" id="r-pass" type="password" autocomplete="new-password" placeholder="Mật khẩu của bạn"></div>
             <label class="check"><input type="checkbox"> Tôi đồng ý với Điều khoản dịch vụ của Lục Viên</label>
-            <a href="index.html" class="btn btn--clay btn--lg btn--block">Tạo tài khoản <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <span class="go go--home"><a href="index.html" class="btn btn--clay btn--lg btn--block">Tạo tài khoản <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
+            <span class="go go--pay"><a href="thanh-toan.html" class="btn btn--clay btn--lg btn--block">Tạo tài khoản <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
           </div>
           <ul class="auth__perks">
             <li><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg> Giảm ngay 10% cho đơn đầu tiên</li>

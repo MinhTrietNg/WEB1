@@ -2923,6 +2923,27 @@
   box-shadow: var(--sh-sm);
 }
 
+/* Vào từ giỏ hàng / Mua ngay: địa chỉ có #thanh-toan nên <body id="thanh-toan">
+   khớp :target. Hiện lời nhắc và đổi đích của các nút sang trang thanh toán. */
+.go { display: contents; }
+.go--pay { display: none; }
+body:target .go--home { display: none; }
+body:target .go--pay { display: contents; }
+
+.auth__notice {
+  display: none;
+  margin-bottom: 18px;
+  padding: 12px 18px;
+  border-radius: var(--r-md);
+  background: var(--c-sage-100);
+  color: var(--c-forest-800);
+  font-size: .9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+body:target .auth__notice { display: block; }
+
 .auth__form { animation: rise .5s var(--ease) both; }
 
 .auth__form h1 { margin-top: 36px; font-size: 2.4rem; }

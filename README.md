@@ -63,6 +63,17 @@ Các phần sau chỉ là giao diện minh họa, không tính toán hay thay đ
 Website không có thẻ `<form>` gửi dữ liệu: các ô nhập liệu không có ràng buộc kiểm tra, và
 những nút cần chuyển trang (Đăng nhập, Tạo tài khoản, Đặt hàng…) là liên kết thông thường.
 
+## Yêu cầu đăng nhập trước khi thanh toán
+
+Hai nút dẫn tới thanh toán (“Tiến hành thanh toán” ở giỏ hàng, “Mua ngay” ở trang chi tiết)
+đều trỏ tới `dang-nhap.html#thanh-toan` chứ không tới `thanh-toan.html`. Thẻ `<body>` của
+`dang-nhap.html` và `dang-ky.html` có `id="thanh-toan"`, nên khi địa chỉ có `#thanh-toan`, CSS
+`body:target` hiện dòng nhắc và bật bộ nút trỏ tới `thanh-toan.html` (bộ nút mặc định trỏ tới
+`index.html` bị ẩn). Nhờ vậy đăng nhập hoặc tạo tài khoản xong mới sang được trang thanh toán.
+
+Đây chỉ là luồng chuyển trang; vì không có JavaScript hay máy chủ, website không thật sự kiểm tra
+phiên đăng nhập — gõ thẳng `thanh-toan.html` vẫn mở được.
+
 ## Ghi chú
 
 - Dữ liệu sản phẩm, giá, đánh giá, địa chỉ… là dữ liệu mẫu.

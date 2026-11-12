@@ -325,6 +325,7 @@ body.page-admin { background: var(--a-bg); }
   display: grid;
   grid-template-columns: 52px minmax(0, 1fr);
   gap: 10px;
+  margin-top: 24px;
 }
 
 .bars__axis {
@@ -892,4 +893,57 @@ body.page-admin { background: var(--a-bg); }
   .toolbar .search input:focus { width: 100%; }
   .toolbar .search { flex-basis: 100%; }
   .toolbar__right { margin-left: 0; }
+}
+
+/* ==========================================================================
+   THÀNH PHẦN DÙNG CHUNG (tách riêng khỏi web bán hàng để admin chạy độc lập)
+   ========================================================================== */
+
+/* Ảnh đại diện chữ cái ------------------------------------------------- */
+.avatar {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--c-sage-200);
+  color: var(--c-forest-800);
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.avatar--clay { background: var(--c-clay-100); color: var(--c-clay-600); }
+.avatar--gold { background: #f3e5c4; color: #7a5a17; }
+.avatar--forest { background: var(--c-forest-800); color: var(--c-sage-200); }
+
+/* Phân trang ------------------------------------------------------------ */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 64px;
+}
+
+.pagination a,
+.pagination .is-disabled {
+  display: grid;
+  place-items: center;
+  min-width: 46px;
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-pill);
+  font-weight: 600;
+  font-size: .92rem;
+  transition: all .2s;
+}
+
+.pagination a:hover { border-color: var(--c-forest-800); }
+.pagination .is-disabled { opacity: .4; cursor: default; }
+
+.pagination a[aria-current] {
+  border-color: var(--c-forest-800);
+  background: var(--c-forest-800);
+  color: var(--c-cream-100);
 }

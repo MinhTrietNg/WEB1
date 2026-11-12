@@ -1,39 +1,69 @@
 # Lục Viên — Website cửa hàng cây cảnh
 
-Website bán cây cảnh viết **hoàn toàn bằng HTML và CSS** (không có JavaScript).
-Toàn bộ nội dung — sản phẩm, giá, đánh giá, số liệu, số thứ tự — được viết cố định
-(hardcode) trong các file HTML. Ảnh và font được lưu ngay trong thư mục dự án, nên
-website chạy được **hoàn toàn offline**, không gọi tới bất kỳ dịch vụ bên ngoài nào.
+Dự án gồm **hai website độc lập**, mỗi website nằm trong một thư mục riêng:
+
+| Thư mục | Website |
+|---|---|
+| `web-ban-hang/` | Web bán hàng dành cho khách (trang chủ, cửa hàng, giỏ hàng, thanh toán…) |
+| `admin/` | Trang quản trị cửa hàng (bảng điều khiển, đơn hàng, sản phẩm, khách hàng…) |
+
+Cả hai viết **hoàn toàn bằng HTML và CSS** (không có JavaScript). Toàn bộ nội dung — sản phẩm,
+giá, đánh giá, số liệu, số thứ tự — được viết cố định (hardcode) trong các file HTML. Ảnh và
+font được lưu ngay trong thư mục của từng website, nên chạy được **hoàn toàn offline**, không
+gọi tới bất kỳ dịch vụ bên ngoài nào.
 
 ## Cách chạy
 
-Mở trực tiếp file `index.html` bằng trình duyệt (Chrome, Edge, Firefox, Safari bản mới).
-Không cần cài đặt, không cần build, không cần mạng.
+Không cần cài đặt, không cần build, không cần mạng. Mở trực tiếp bằng trình duyệt
+(Chrome, Edge, Firefox, Safari bản mới):
+
+- Web bán hàng: `web-ban-hang/index.html`
+- Trang quản trị: `admin/index.html`
+
+Mỗi thư mục tự chứa đủ `css/`, `fonts/`, `images/` cần dùng nên có thể sao chép hoặc triển khai
+riêng từng website. Chỗ duy nhất hai site trỏ sang nhau là các liên kết “Về cửa hàng” và
+“Bài viết” trong trang quản trị (`../web-ban-hang/...`); nếu tách hẳn hai site khỏi nhau, chỉ
+cần sửa các liên kết đó.
 
 ## Cấu trúc thư mục
 
 ```
-├── index.html                 Trang chủ
-├── san-pham.html              Cửa hàng – trang 1 (sản phẩm 1–12)
-├── san-pham-2.html            Cửa hàng – trang 2 (sản phẩm 13–24)
-├── san-pham-3.html            Cửa hàng – trang 3 (sản phẩm 25–28)
-├── chi-tiet.html              Chi tiết sản phẩm (Monstera)
-├── gio-hang.html              Giỏ hàng
-├── thanh-toan.html            Thanh toán
-├── dat-hang-thanh-cong.html   Xác nhận đặt hàng
-├── gioi-thieu.html            Về chúng tôi
-├── cham-soc.html              Cẩm nang chăm cây (danh sách bài viết)
-├── bai-viet.html              Bài viết chi tiết
-├── lien-he.html               Liên hệ (sơ đồ vị trí vẽ bằng CSS)
-├── dang-nhap.html             Đăng nhập
-├── dang-ky.html               Tạo tài khoản
-├── css/
-│   ├── fonts.css              Khai báo @font-face cho font lưu cục bộ
-│   ├── style.css              Design tokens, header, footer, nút, form, thẻ sản phẩm
-│   └── pages.css              Giao diện riêng cho từng trang + responsive
-├── fonts/                     Be Vietnam Pro, Fraunces (.woff2, có bộ ký tự tiếng Việt)
-└── images/                    43 ảnh cây cảnh (.jpg)
+├── README.md
+│
+├── web-ban-hang/                  Website bán hàng
+│   ├── index.html                 Trang chủ
+│   ├── san-pham.html              Cửa hàng – trang 1 (sản phẩm 1–12)
+│   ├── san-pham-2.html            Cửa hàng – trang 2 (sản phẩm 13–24)
+│   ├── san-pham-3.html            Cửa hàng – trang 3 (sản phẩm 25–28)
+│   ├── chi-tiet.html              Chi tiết sản phẩm (Monstera)
+│   ├── gio-hang.html              Giỏ hàng
+│   ├── thanh-toan.html            Thanh toán
+│   ├── dat-hang-thanh-cong.html   Xác nhận đặt hàng
+│   ├── gioi-thieu.html            Về chúng tôi
+│   ├── cham-soc.html              Cẩm nang chăm cây (danh sách bài viết)
+│   ├── bai-viet.html              Bài viết chi tiết
+│   ├── lien-he.html               Liên hệ (sơ đồ vị trí vẽ bằng CSS)
+│   ├── dang-nhap.html             Đăng nhập
+│   ├── dang-ky.html               Tạo tài khoản
+│   ├── css/
+│   │   ├── fonts.css              Khai báo @font-face cho font lưu cục bộ
+│   │   ├── style.css              Design tokens, header, footer, nút, form, thẻ sản phẩm
+│   │   └── pages.css              Giao diện riêng cho từng trang + responsive
+│   ├── fonts/                     Be Vietnam Pro, Fraunces (.woff2, có bộ ký tự tiếng Việt)
+│   └── images/                    43 ảnh cây cảnh (.jpg)
+│
+└── admin/                         Website quản trị
+    ├── index.html                 Bảng điều khiển, đơn hàng, sản phẩm, khách hàng
+    ├── css/
+    │   ├── fonts.css              Bản sao từ web-ban-hang
+    │   ├── style.css              Bản sao từ web-ban-hang (design tokens, nút, form…)
+    │   └── admin.css              Bố cục quản trị, biểu đồ CSS, bảng dữ liệu
+    ├── fonts/                     Bản sao font của web-ban-hang
+    └── images/                    10 ảnh dùng trong trang quản trị
 ```
+
+`fonts.css`, `style.css` và thư mục `fonts/` có mặt ở cả hai site (bản sao) để mỗi site chạy
+độc lập. Khi sửa design tokens hoặc font, cần cập nhật ở cả hai nơi.
 
 ## Các hiệu ứng giao diện làm bằng CSS
 

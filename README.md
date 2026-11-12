@@ -25,7 +25,8 @@ Không cần cài đặt, không cần build, không cần mạng.
 ├── cham-soc.html              Cẩm nang chăm cây (danh sách bài viết)
 ├── bai-viet.html              Bài viết chi tiết
 ├── lien-he.html               Liên hệ (sơ đồ vị trí vẽ bằng CSS)
-├── dang-nhap.html             Đăng nhập / Đăng ký
+├── dang-nhap.html             Đăng nhập
+├── dang-ky.html               Tạo tài khoản
 ├── css/
 │   ├── fonts.css              Khai báo @font-face cho font lưu cục bộ
 │   ├── style.css              Design tokens, header, footer, nút, form, thẻ sản phẩm
@@ -40,7 +41,7 @@ Không cần cài đặt, không cần build, không cần mạng.
 |---|---|
 | Menu điện thoại, bảng bộ lọc trượt ra | `checkbox` ẩn + `label` + selector `:checked ~` |
 | Mega menu “Cửa hàng” | `:hover` và `:focus-within` |
-| Tabs sản phẩm, tabs mô tả/đánh giá, đăng nhập/đăng ký | `radio` ẩn + `label` |
+| Tabs sản phẩm, tabs mô tả/đánh giá | `radio` ẩn + `label` |
 | Gallery ảnh sản phẩm | `radio` + hiệu ứng `opacity` |
 | Hiện chi tiết phương thức thanh toán | `.pay:has(input:checked)` |
 | Thông báo “Đã thêm vào giỏ hàng” | nút là `<label>` của `radio` ẩn + `body:has(#cart-added:checked)` |

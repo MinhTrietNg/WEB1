@@ -2899,8 +2899,6 @@
 
 .auth__box { width: 100%; max-width: 440px; }
 
-.auth__box > input { position: absolute; opacity: 0; pointer-events: none; }
-
 .auth__tabs {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2909,28 +2907,23 @@
   background: var(--c-cream-100);
 }
 
-.auth__tabs label {
+.auth__tabs a {
   padding: 12px;
   border-radius: var(--r-pill);
   text-align: center;
   font-weight: 600;
   font-size: .92rem;
   color: var(--c-muted);
-  cursor: pointer;
   transition: all .25s;
 }
 
-#auth-login:checked ~ .auth__tabs label[for="auth-login"],
-#auth-register:checked ~ .auth__tabs label[for="auth-register"] {
+.auth__tabs a.is-active {
   background: var(--c-white);
   color: var(--c-forest-900);
   box-shadow: var(--sh-sm);
 }
 
-.auth__form { display: none; }
-
-#auth-login:checked ~ .auth__form--login,
-#auth-register:checked ~ .auth__form--register { display: block; animation: rise .5s var(--ease) both; }
+.auth__form { animation: rise .5s var(--ease) both; }
 
 .auth__form h1 { margin-top: 36px; font-size: 2.4rem; }
 .auth__form > p { margin-top: 8px; }

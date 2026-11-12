@@ -2,8 +2,9 @@
    LỤC VIÊN — Trang quản trị
    admin.css · Bố cục bảng điều khiển, thẻ số liệu, biểu đồ CSS, bảng dữ liệu
    --------------------------------------------------------------------------
-   Toàn bộ số liệu được viết cố định trong admin.html. CSS chỉ lo trình bày:
-   chuyển mục bằng radio ẩn + label, biểu đồ bằng chiều cao/conic-gradient
+   Toàn bộ số liệu được viết cố định trong các trang HTML (index, don-hang,
+   san-pham, khach-hang). CSS chỉ lo trình bày: mục đang xem lấy từ
+   aria-current="page" trên thanh bên, biểu đồ bằng chiều cao/conic-gradient
    đặt sẵn, không tính toán gì.
    ========================================================================== */
 
@@ -28,15 +29,6 @@
 }
 
 body.page-admin { background: var(--a-bg); }
-
-/* Radio ẩn điều khiển mục đang xem; ghim vào khung nhìn để không cuộn trang */
-.admin-tab {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-}
 
 .admin {
   display: grid;
@@ -73,7 +65,6 @@ body.page-admin { background: var(--a-bg); }
 
 .side-nav { display: grid; gap: 2px; }
 
-.side-nav label,
 .side-nav a {
   display: flex;
   align-items: center;
@@ -87,7 +78,6 @@ body.page-admin { background: var(--a-bg); }
   transition: background-color .2s, color .2s;
 }
 
-.side-nav label:hover,
 .side-nav a:hover { background: rgba(255, 255, 255, .06); color: var(--c-cream-100); }
 
 .side-nav .icon { width: 19px; height: 19px; }
@@ -103,10 +93,7 @@ body.page-admin { background: var(--a-bg); }
   text-align: center;
 }
 
-#tab-overview:checked ~ .side label[for="tab-overview"],
-#tab-orders:checked ~ .side label[for="tab-orders"],
-#tab-products:checked ~ .side label[for="tab-products"],
-#tab-customers:checked ~ .side label[for="tab-customers"] {
+.side-nav a[aria-current="page"] {
   background: var(--c-sage-300);
   color: var(--c-forest-950);
   font-weight: 600;
@@ -188,13 +175,8 @@ body.page-admin { background: var(--a-bg); }
 .admin-top .icon-btn .count { border-color: var(--a-bg); }
 
 /* PANELS ----------------------------------------------------------------- */
-.panel { display: none; padding-top: 32px; }
-
-#tab-overview:checked ~ .admin-main .panel--overview,
-#tab-orders:checked ~ .admin-main .panel--orders,
-#tab-products:checked ~ .admin-main .panel--products,
-#tab-customers:checked ~ .admin-main .panel--customers {
-  display: block;
+.panel {
+  padding-top: 32px;
   animation: rise .45s var(--ease) both;
 }
 
@@ -873,7 +855,6 @@ body.page-admin { background: var(--a-bg); }
   .side__foot,
   .side-nav--secondary { display: none; }
 
-  .side-nav label,
   .side-nav a { flex: none; padding: 9px 14px; white-space: nowrap; }
 
   .admin-main { padding: 0 16px 40px; }

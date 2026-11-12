@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quản trị — Lục Viên</title>
+  <title>Tổng quan — Quản trị Lục Viên</title>
   <meta name="description" content="Trang quản trị cửa hàng Lục Viên: doanh thu, đơn hàng, sản phẩm và khách hàng.">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#0e1d15">
@@ -13,13 +13,7 @@
   <link rel="stylesheet" href="css/admin.css">
 </head>
 <body class="page-admin">
-  <!-- Mục đang xem: radio ẩn + label ở thanh bên (không dùng JavaScript) -->
   <div class="admin">
-    <input type="radio" name="admin-tab" id="tab-overview" class="admin-tab" checked aria-label="Tổng quan">
-    <input type="radio" name="admin-tab" id="tab-orders" class="admin-tab" aria-label="Đơn hàng">
-    <input type="radio" name="admin-tab" id="tab-products" class="admin-tab" aria-label="Sản phẩm">
-    <input type="radio" name="admin-tab" id="tab-customers" class="admin-tab" aria-label="Khách hàng">
-
     <!-- THANH BÊN -->
     <aside class="side" aria-label="Điều hướng quản trị">
       <a href="../web-ban-hang/index.html" class="logo" aria-label="Lục Viên – về cửa hàng">
@@ -29,10 +23,10 @@
 
       <p class="side__label">Bán hàng</p>
       <nav class="side-nav">
-        <label for="tab-overview"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg> Tổng quan</label>
-        <label for="tab-orders"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6M9 12h6"/></svg> Đơn hàng <b>6</b></label>
-        <label for="tab-products"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4-3-7-8-7 0 4 3 7 8 7z"/><path d="M12 14c0-4 3-7 8-7 0 4-3 7-8 7z"/></svg> Sản phẩm</label>
-        <label for="tab-customers"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6 6 0 0 1 3.5 5.5"/></svg> Khách hàng</label>
+        <a href="index.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg> Tổng quan</a>
+        <a href="don-hang.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6M9 12h6"/></svg> Đơn hàng <b>6</b></a>
+        <a href="san-pham.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4-3-7-8-7 0 4 3 7 8 7z"/><path d="M12 14c0-4 3-7 8-7 0 4-3 7-8 7z"/></svg> Sản phẩm</a>
+        <a href="khach-hang.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6 6 0 0 1 3.5 5.5"/></svg> Khách hàng</a>
       </nav>
 
       <p class="side__label">Cửa hàng</p>
@@ -73,7 +67,6 @@
         </div>
       </header>
 
-      <!-- ===================== TỔNG QUAN ===================== -->
       <section class="panel panel--overview" aria-labelledby="h-overview">
         <div class="panel-head">
           <div>
@@ -82,7 +75,7 @@
           </div>
           <div class="panel-head__actions">
             <button type="button" class="btn btn--outline btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg> Xuất báo cáo</button>
-            <label for="tab-products" class="btn btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Thêm sản phẩm</label>
+            <a href="san-pham.html" class="btn btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Thêm sản phẩm</a>
           </div>
         </div>
 
@@ -178,7 +171,7 @@
           <article class="card table-card span-8">
             <div class="card__head">
               <div><h2>Đơn hàng mới nhất</h2><p>6 đơn gần đây</p></div>
-              <label for="tab-orders" class="card__link">Xem tất cả →</label>
+              <a href="don-hang.html" class="card__link">Xem tất cả →</a>
             </div>
             <div class="table-scroll">
               <table class="atable" style="margin-top: 16px">
@@ -211,7 +204,7 @@
           <article class="card span-7">
             <div class="card__head">
               <div><h2>Cảnh báo tồn kho</h2><p>Sản phẩm cần nhập thêm</p></div>
-              <label for="tab-products" class="card__link">Quản lý kho →</label>
+              <a href="san-pham.html" class="card__link">Quản lý kho →</a>
             </div>
             <div class="alerts">
               <div class="alert-row alert-row--bad"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17v.5"/></svg><div><strong>Đuôi Công Lancifolia — hết hàng</strong><span>Đã ẩn khỏi cửa hàng · 7 khách đang chờ</span></div><button type="button" class="btn btn--clay">Nhập hàng</button></div>
@@ -229,178 +222,6 @@
               <li><span class="feed__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9.5h8M8 12.5h5"/></svg></span><div><strong>Minh Đức</strong> yêu cầu khảo sát cây văn phòng<time>09:15</time></div></li>
               <li><span class="feed__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg></span><div>Nhập kho 40 chậu <strong>Lưỡi Hổ Xanh</strong><time>08:30</time></div></li>
             </ul>
-          </article>
-        </div>
-      </section>
-
-      <!-- ===================== ĐƠN HÀNG ===================== -->
-      <section class="panel panel--orders" aria-labelledby="h-orders">
-        <div class="panel-head">
-          <div>
-            <h1 id="h-orders">Đơn hàng</h1>
-            <p>157 đơn trong tháng 11/2026 · 6 đơn đang chờ xác nhận.</p>
-          </div>
-          <div class="panel-head__actions">
-            <button type="button" class="btn btn--outline btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg> Xuất Excel</button>
-            <button type="button" class="btn btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Tạo đơn thủ công</button>
-          </div>
-        </div>
-
-        <article class="card table-card">
-          <div class="toolbar">
-            <div class="chips" role="radiogroup" aria-label="Trạng thái đơn hàng">
-              <label><input type="radio" name="order-status" checked>Tất cả<small>157</small></label>
-              <label><input type="radio" name="order-status">Chờ xác nhận<small>6</small></label>
-              <label><input type="radio" name="order-status">Đang chuẩn bị<small>4</small></label>
-              <label><input type="radio" name="order-status">Đang giao<small>9</small></label>
-              <label><input type="radio" name="order-status">Đã giao<small>132</small></label>
-              <label><input type="radio" name="order-status">Đã hủy<small>6</small></label>
-            </div>
-            <div class="toolbar__right">
-              <div class="search">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-                <input type="search" placeholder="Mã đơn, tên, số điện thoại…" aria-label="Tìm đơn hàng">
-              </div>
-            </div>
-          </div>
-          <div class="table-scroll">
-            <table class="atable atable--wide">
-              <thead>
-                <tr><th scope="col"><input type="checkbox" aria-label="Chọn tất cả"></th><th scope="col">Mã đơn</th><th scope="col">Khách hàng</th><th scope="col">Sản phẩm</th><th scope="col">Thời gian</th><th scope="col">Thanh toán</th><th scope="col" class="num">Tổng tiền</th><th scope="col">Trạng thái</th><th scope="col"><span class="sr-only">Thao tác</span></th></tr>
-              </thead>
-              <tbody>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0428"></td><td class="code">#LV-261112-0428</td><td><div class="who"><span class="avatar">TH</span><div><strong>Thu Hà</strong><span>0909 *** 128</span></div></div></td><td>Monstera + 2 sản phẩm</td><td class="muted">12/11 · 10:42</td><td>Chuyển khoản</td><td class="num">1.404.000₫</td><td><span class="pill pill--muted">Đang chuẩn bị</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a><a aria-label="In phiếu giao"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6M9 12h6"/></svg></a></div></td></tr>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0427"></td><td class="code">#LV-261112-0427</td><td><div class="who"><span class="avatar avatar--clay">MĐ</span><div><strong>Minh Đức</strong><span>0912 *** 455</span></div></div></td><td>Combo văn phòng (−20%)</td><td class="muted">12/11 · 09:15</td><td>COD</td><td class="num">856.000₫</td><td><span class="pill pill--warn">Chờ xác nhận</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a><a aria-label="Xác nhận đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg></a></div></td></tr>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0426"></td><td class="code">#LV-261112-0426</td><td><div class="who"><span class="avatar avatar--gold">AN</span><div><strong>Ánh Ngọc</strong><span>0937 *** 602</span></div></div></td><td>Combo 6 Sen Đá Tiểu Cảnh</td><td class="muted">12/11 · 08:03</td><td>MoMo</td><td class="num">350.000₫</td><td><span class="pill pill--warn">Chờ xác nhận</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a><a aria-label="Xác nhận đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg></a></div></td></tr>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0425"></td><td class="code">#LV-261111-0425</td><td><div class="who"><span class="avatar avatar--forest">QB</span><div><strong>Quốc Bảo</strong><span>0903 *** 771</span></div></div></td><td>Bonsai Hoa Giấy Tím</td><td class="muted">11/11 · 19:47</td><td>Thẻ</td><td class="num">1.250.000₫</td><td><span class="pill pill--info">Đang giao</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a><a aria-label="Theo dõi giao hàng"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></a></div></td></tr>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0424"></td><td class="code">#LV-261111-0424</td><td><div class="who"><span class="avatar">KL</span><div><strong>Khánh Linh</strong><span>0868 *** 219</span></div></div></td><td>Monstera size Lớn + chậu đất nung</td><td class="muted">11/11 · 16:20</td><td>Chuyển khoản</td><td class="num">1.040.000₫</td><td><span class="pill pill--info">Đang giao</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a><a aria-label="Theo dõi giao hàng"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></a></div></td></tr>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0423"></td><td class="code">#LV-261111-0423</td><td><div class="who"><span class="avatar avatar--clay">PT</span><div><strong>Phương Thảo</strong><span>0977 *** 340</span></div></div></td><td>Lan Hồ Điệp Tím Đốm</td><td class="muted">11/11 · 11:05</td><td>COD</td><td class="num">690.000₫</td><td><span class="pill pill--good">Đã giao</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a></div></td></tr>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0422"></td><td class="code">#LV-261110-0422</td><td><div class="who"><span class="avatar avatar--gold">HN</span><div><strong>Hoàng Nam</strong><span>0918 *** 006</span></div></div></td><td>Lưỡi Hổ Kèm Kệ Gỗ Sồi</td><td class="muted">10/11 · 15:32</td><td>COD</td><td class="num">520.000₫</td><td><span class="pill pill--good">Đã giao</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a></div></td></tr>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0421"></td><td class="code">#LV-261110-0421</td><td><div class="who"><span class="avatar avatar--forest">BC</span><div><strong>Bảo Châu</strong><span>0985 *** 813</span></div></div></td><td>Cỏ Lan Chi + Dương Xỉ Boston</td><td class="muted">10/11 · 10:11</td><td>MoMo</td><td class="num">520.000₫</td><td><span class="pill pill--good">Đã giao</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a></div></td></tr>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0420"></td><td class="code">#LV-261109-0420</td><td><div class="who"><span class="avatar">TK</span><div><strong>Tuấn Kiệt</strong><span>0933 *** 590</span></div></div></td><td>Bàng Singapore</td><td class="muted">09/11 · 18:40</td><td>Chuyển khoản</td><td class="num">680.000₫</td><td><span class="pill pill--bad">Đã hủy</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a></div></td></tr>
-                <tr><td><input type="checkbox" aria-label="Chọn đơn 0419"></td><td class="code">#LV-261109-0419</td><td><div class="who"><span class="avatar avatar--clay">MP</span><div><strong>Mai Phương</strong><span>0901 *** 247</span></div></div></td><td>Combo 5 Cây Lọc Không Khí</td><td class="muted">09/11 · 09:26</td><td>Thẻ</td><td class="num">1.190.000₫</td><td><span class="pill pill--good">Đã giao</span></td><td><div class="row-actions"><a aria-label="Xem đơn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a></div></td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="table-foot">
-            <span>Hiển thị 1–10 trong 157 đơn hàng</span>
-            <nav class="pagination" aria-label="Phân trang đơn hàng">
-              <span class="is-disabled" aria-hidden="true"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>
-              <a aria-current="page">1</a><a>2</a><a>3</a><a>…</a><a>16</a>
-              <a aria-label="Trang sau"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </nav>
-          </div>
-        </article>
-      </section>
-
-      <!-- ===================== SẢN PHẨM ===================== -->
-      <section class="panel panel--products" aria-labelledby="h-products">
-        <div class="panel-head">
-          <div>
-            <h1 id="h-products">Sản phẩm</h1>
-            <p>28 sản phẩm đang kinh doanh · 6 sản phẩm sắp hết, 1 sản phẩm hết hàng.</p>
-          </div>
-          <div class="panel-head__actions">
-            <button type="button" class="btn btn--outline btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg> Nhập kho</button>
-            <button type="button" class="btn btn--clay btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Thêm sản phẩm</button>
-          </div>
-        </div>
-
-        <article class="card table-card">
-          <div class="toolbar">
-            <div class="chips" role="radiogroup" aria-label="Tình trạng kho">
-              <label><input type="radio" name="stock-status" checked>Tất cả<small>28</small></label>
-              <label><input type="radio" name="stock-status">Còn hàng<small>21</small></label>
-              <label><input type="radio" name="stock-status">Sắp hết<small>6</small></label>
-              <label><input type="radio" name="stock-status">Hết hàng<small>1</small></label>
-            </div>
-            <div class="toolbar__right">
-              <div class="search">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-                <input type="search" placeholder="Tên cây, tên khoa học…" aria-label="Tìm sản phẩm">
-              </div>
-            </div>
-          </div>
-          <div class="table-scroll">
-            <table class="atable">
-              <thead>
-                <tr><th scope="col">Sản phẩm</th><th scope="col">Danh mục</th><th scope="col" class="num">Giá bán</th><th scope="col">Tồn kho</th><th scope="col" class="num">Đã bán (T11)</th><th scope="col">Tình trạng</th><th scope="col">Hiển thị</th><th scope="col"><span class="sr-only">Thao tác</span></th></tr>
-              </thead>
-              <tbody>
-                <tr><td><div class="prod"><img src="images/monstera-hold.jpg" alt=""><div><strong>Trầu Bà Lá Xẻ Monstera</strong><span>Monstera deliciosa</span></div></div></td><td>Cây trong nhà</td><td class="num">450.000₫</td><td><div class="stock" style="--w: 48%">24 cây<i></i></div></td><td class="num">38</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Monstera"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/snake.jpg" alt=""><div><strong>Lưỡi Hổ Xanh</strong><span>Dracaena trifasciata</span></div></div></td><td>Cây văn phòng</td><td class="num">320.000₫</td><td><div class="stock" style="--w: 92%">46 cây<i></i></div></td><td class="num">31</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Lưỡi Hổ"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/zz-hold.jpg" alt=""><div><strong>Kim Tiền ZZ</strong><span>Zamioculcas zamiifolia</span></div></div></td><td>Cây văn phòng</td><td class="num">390.000₫</td><td><div class="stock stock--low" style="--w: 16%">8 cây<i></i></div></td><td class="num">21</td><td><span class="pill pill--warn">Sắp hết</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Kim Tiền"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/succulent-pots.jpg" alt=""><div><strong>Combo 6 Sen Đá Tiểu Cảnh</strong><span>Echeveria mix</span></div></div></td><td>Sen đá &amp; xương rồng</td><td class="num">350.000₫</td><td><div class="stock" style="--w: 30%">15 bộ<i></i></div></td><td class="num">24</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Combo sen đá"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/orchid.jpg" alt=""><div><strong>Lan Hồ Điệp Tím Đốm</strong><span>Phalaenopsis hybrid</span></div></div></td><td>Cây trong nhà</td><td class="num">690.000₫</td><td><div class="stock stock--low" style="--w: 6%">3 chậu<i></i></div></td><td class="num">9</td><td><span class="pill pill--warn">Sắp hết</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Lan Hồ Điệp"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/fiddle.jpg" alt=""><div><strong>Bàng Singapore</strong><span>Ficus lyrata</span></div></div></td><td>Cây trong nhà</td><td class="num">680.000₫</td><td><div class="stock stock--low" style="--w: 12%">6 cây<i></i></div></td><td class="num">5</td><td><span class="pill pill--warn">Sắp hết</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Bàng Singapore"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/bougainvillea.jpg" alt=""><div><strong>Bonsai Hoa Giấy Tím</strong><span>Bougainvillea glabra</span></div></div></td><td>Bonsai</td><td class="num">1.250.000₫</td><td><div class="stock stock--low" style="--w: 4%">2 cây<i></i></div></td><td class="num">1</td><td><span class="pill pill--warn">Sắp hết</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Bonsai Hoa Giấy"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/calathea-hold.jpg" alt=""><div><strong>Đuôi Công Lancifolia</strong><span>Goeppertia insignis</span></div></div></td><td>Cây trong nhà</td><td class="num">280.000₫</td><td><div class="stock stock--out" style="--w: 0%">Hết hàng<i></i></div></td><td class="num">7</td><td><span class="pill pill--bad">Hết hàng</span></td><td><label class="switch"><input type="checkbox" aria-label="Hiển thị Đuôi Công"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/scindapsus.jpg" alt=""><div><strong>Trầu Bà Bạc Satin</strong><span>Scindapsus pictus</span></div></div></td><td>Cây treo</td><td class="num">260.000₫</td><td><div class="stock" style="--w: 36%">18 chậu<i></i></div></td><td class="num">6</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Trầu Bà Bạc"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/plant-group.jpg" alt=""><div><strong>Combo 5 Cây Lọc Không Khí</strong><span>Mix cây lá trong nhà</span></div></div></td><td>Cây trong nhà</td><td class="num">1.190.000₫</td><td><div class="stock" style="--w: 22%">11 bộ<i></i></div></td><td class="num">4</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Combo 5 cây"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="table-foot">
-            <span>Hiển thị 1–10 trong 28 sản phẩm</span>
-            <nav class="pagination" aria-label="Phân trang sản phẩm">
-              <span class="is-disabled" aria-hidden="true"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>
-              <a aria-current="page">1</a><a>2</a><a>3</a>
-              <a aria-label="Trang sau"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </nav>
-          </div>
-        </article>
-      </section>
-
-      <!-- ===================== KHÁCH HÀNG ===================== -->
-      <section class="panel panel--customers" aria-labelledby="h-customers">
-        <div class="panel-head">
-          <div>
-            <h1 id="h-customers">Khách hàng</h1>
-            <p>Thành viên được xếp hạng theo tổng chi tiêu 12 tháng.</p>
-          </div>
-          <div class="panel-head__actions">
-            <button type="button" class="btn btn--outline btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9.5h8M8 12.5h5"/></svg> Gửi tin nhắn Zalo</button>
-            <button type="button" class="btn btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg> Tạo mã ưu đãi</button>
-          </div>
-        </div>
-
-        <div class="kpis">
-          <article class="card kpi"><div class="kpi__top">Tổng khách hàng</div><p class="kpi__value">12.486</p><p class="kpi__foot">Tại 34 tỉnh thành</p></article>
-          <article class="card kpi"><div class="kpi__top">Khách quay lại</div><p class="kpi__value">38%</p><p class="kpi__foot">Mua từ 2 đơn trở lên</p></article>
-          <article class="card kpi"><div class="kpi__top">Thành viên Vàng</div><p class="kpi__value">412</p><p class="kpi__foot">Chi tiêu từ 5 triệu/năm</p></article>
-          <article class="card kpi"><div class="kpi__top">Điểm hài lòng</div><p class="kpi__value">4,9/5</p><p class="kpi__foot">Từ 2.318 đánh giá</p></article>
-        </div>
-
-        <div class="cust-grid">
-          <article class="card cust">
-            <div class="cust__top"><span class="avatar">TH</span><div><strong>Thu Hà</strong><span>Quận 7 · khách từ 03/2024</span></div><span class="pill tier--gold">Vàng</span></div>
-            <dl><div><dt>Đơn hàng</dt><dd>12</dd></div><div><dt>Chi tiêu</dt><dd>8,4 tr</dd></div><div><dt>Gần nhất</dt><dd>12/11</dd></div></dl>
-            <p class="cust__fav">Hay mua: <b>Cây lá lớn, chậu gốm men</b></p>
-          </article>
-          <article class="card cust">
-            <div class="cust__top"><span class="avatar avatar--clay">MĐ</span><div><strong>Minh Đức</strong><span>Quận 1 · khách doanh nghiệp</span></div><span class="pill tier--gold">Vàng</span></div>
-            <dl><div><dt>Đơn hàng</dt><dd>7</dd></div><div><dt>Chi tiêu</dt><dd>15,2 tr</dd></div><div><dt>Gần nhất</dt><dd>12/11</dd></div></dl>
-            <p class="cust__fav">Hay mua: <b>Combo cây văn phòng</b></p>
-          </article>
-          <article class="card cust">
-            <div class="cust__top"><span class="avatar avatar--forest">QB</span><div><strong>Quốc Bảo</strong><span>Bình Thạnh · khách từ 08/2023</span></div><span class="pill tier--gold">Vàng</span></div>
-            <dl><div><dt>Đơn hàng</dt><dd>9</dd></div><div><dt>Chi tiêu</dt><dd>6,7 tr</dd></div><div><dt>Gần nhất</dt><dd>11/11</dd></div></dl>
-            <p class="cust__fav">Hay mua: <b>Bonsai, quà tặng</b></p>
-          </article>
-          <article class="card cust">
-            <div class="cust__top"><span class="avatar avatar--gold">AN</span><div><strong>Ánh Ngọc</strong><span>Thủ Đức · khách từ 01/2025</span></div><span class="pill tier--silver">Bạc</span></div>
-            <dl><div><dt>Đơn hàng</dt><dd>5</dd></div><div><dt>Chi tiêu</dt><dd>2,1 tr</dd></div><div><dt>Gần nhất</dt><dd>12/11</dd></div></dl>
-            <p class="cust__fav">Hay mua: <b>Sen đá, xương rồng</b></p>
-          </article>
-          <article class="card cust">
-            <div class="cust__top"><span class="avatar">KL</span><div><strong>Khánh Linh</strong><span>Phú Nhuận · khách từ 06/2025</span></div><span class="pill tier--silver">Bạc</span></div>
-            <dl><div><dt>Đơn hàng</dt><dd>4</dd></div><div><dt>Chi tiêu</dt><dd>3,3 tr</dd></div><div><dt>Gần nhất</dt><dd>11/11</dd></div></dl>
-            <p class="cust__fav">Hay mua: <b>Monstera, cây lọc không khí</b></p>
-          </article>
-          <article class="card cust">
-            <div class="cust__top"><span class="avatar avatar--clay">PT</span><div><strong>Phương Thảo</strong><span>Gò Vấp · khách từ 10/2026</span></div><span class="pill tier--green">Mới</span></div>
-            <dl><div><dt>Đơn hàng</dt><dd>2</dd></div><div><dt>Chi tiêu</dt><dd>0,9 tr</dd></div><div><dt>Gần nhất</dt><dd>11/11</dd></div></dl>
-            <p class="cust__fav">Hay mua: <b>Hoa lan, cây để bàn</b></p>
           </article>
         </div>
       </section>

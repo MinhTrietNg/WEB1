@@ -5,7 +5,7 @@ Dự án gồm **hai website độc lập**, mỗi website nằm trong một th�
 | Thư mục | Website |
 |---|---|
 | `web-ban-hang/` | Web bán hàng dành cho khách (trang chủ, cửa hàng, giỏ hàng, thanh toán…) |
-| `admin/` | Trang quản trị cửa hàng (bảng điều khiển, đơn hàng, sản phẩm, khách hàng…) |
+| `admin/` | Trang quản trị cửa hàng (tổng quan, đơn hàng, sản phẩm, khách hàng…) |
 
 Cả hai viết **hoàn toàn bằng HTML và CSS** (không có JavaScript). Toàn bộ nội dung — sản phẩm,
 giá, đánh giá, số liệu, số thứ tự — được viết cố định (hardcode) trong các file HTML. Ảnh và
@@ -18,7 +18,8 @@ Không cần cài đặt, không cần build, không cần mạng. Mở trực t
 (Chrome, Edge, Firefox, Safari bản mới):
 
 - Web bán hàng: `web-ban-hang/index.html`
-- Trang quản trị: `admin/index.html`
+- Trang quản trị: `admin/index.html` (Tổng quan), từ đó chuyển sang Đơn hàng, Sản phẩm, Khách hàng
+  bằng thanh bên
 
 Mỗi thư mục tự chứa đủ `css/`, `fonts/`, `images/` cần dùng nên có thể sao chép hoặc triển khai
 riêng từng website. Chỗ duy nhất hai site trỏ sang nhau là các liên kết “Về cửa hàng” và
@@ -53,7 +54,10 @@ cần sửa các liên kết đó.
 │   └── images/                    43 ảnh cây cảnh (.jpg)
 │
 └── admin/                         Website quản trị
-    ├── index.html                 Bảng điều khiển, đơn hàng, sản phẩm, khách hàng
+    ├── index.html                 Tổng quan (bảng điều khiển)
+    ├── don-hang.html              Đơn hàng
+    ├── san-pham.html              Sản phẩm
+    ├── khach-hang.html            Khách hàng
     ├── css/
     │   ├── fonts.css              Bản sao từ web-ban-hang
     │   ├── style.css              Bản sao từ web-ban-hang (design tokens, nút, form…)

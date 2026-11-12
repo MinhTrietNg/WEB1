@@ -43,7 +43,7 @@ Không cần cài đặt, không cần build, không cần mạng.
 | Tabs sản phẩm, tabs mô tả/đánh giá, đăng nhập/đăng ký | `radio` ẩn + `label` |
 | Gallery ảnh sản phẩm | `radio` + hiệu ứng `opacity` |
 | Hiện chi tiết phương thức thanh toán | `.pay:has(input:checked)` |
-| Thông báo “Đã gửi” ở trang liên hệ | `:target` |
+| Thông báo “Đã thêm vào giỏ hàng” | nút là `<label>` của `radio` ẩn + `body:has(#cart-added:checked)` |
 | FAQ / accordion | thẻ `<details>` / `<summary>` |
 | Thanh tiến độ đọc bài viết | `animation-timeline: scroll()` |
 | Hiệu ứng xuất hiện khi cuộn | `animation-timeline: view()` |
@@ -56,9 +56,11 @@ Các phần sau chỉ là giao diện minh họa, không tính toán hay thay đ
   bài viết luôn cố định như trong HTML.
 - Lựa chọn kích thước, chậu, số lượng ở trang chi tiết: giá luôn hiển thị cố định.
 - Lựa chọn hình thức giao hàng, mã giảm giá ở giỏ hàng: phí giao và tổng tiền luôn cố định.
+- Nút “Thêm vào giỏ” chỉ hiện thông báo đã thêm; giỏ hàng luôn gồm các sản phẩm viết sẵn
+  trong `gio-hang.html`. Chỉ khi bấm “Tiến hành thanh toán” mới sang trang thanh toán.
 
-Các ô nhập liệu trong form (thanh toán, liên hệ, đăng nhập) không có ràng buộc kiểm tra;
-bấm nút gửi sẽ chuyển thẳng sang trang tiếp theo bằng thuộc tính `action`.
+Website không có thẻ `<form>` gửi dữ liệu: các ô nhập liệu không có ràng buộc kiểm tra, và
+những nút cần chuyển trang (Đăng nhập, Tạo tài khoản, Đặt hàng…) là liên kết thông thường.
 
 ## Ghi chú
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sản phẩm — Quản trị Lục Viên</title>
-  <meta name="description" content="Trang quản trị cửa hàng Lục Viên: doanh thu, đơn hàng, sản phẩm và khách hàng.">
+  <meta name="description" content="Trang quản trị cửa hàng Lục Viên: đơn hàng, sản phẩm, người dùng và thống kê.">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#0e1d15">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231d3a2c'/%3E%3Cpath d='M15 25a8 8 0 0 1-8-8c0-7 6-10.5 18-10 .5 12.5-4 18-10 18zM7 25c3.5-5.5 7.5-9 12.5-11' fill='none' stroke='%23bccdab' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
@@ -16,100 +16,73 @@
   <div class="admin">
     <!-- THANH BÊN -->
     <aside class="side" aria-label="Điều hướng quản trị">
-      <a href="../web-ban-hang/index.html" class="logo" aria-label="Lục Viên – về cửa hàng">
+      <a href="index.html" class="logo" aria-label="Lục Viên – trang tổng quan quản trị">
         <span class="logo__mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-6 5-9.5 16-9 .5 11-3.5 16-9 16z"/><path d="M4 20c3-5 6.5-8 11-10"/></svg></span>
         <span class="logo__text">Lục Viên<small>Quản trị</small></span>
       </a>
 
-      <p class="side__label">Bán hàng</p>
+      <p class="side__label">Quản lý</p>
       <nav class="side-nav">
         <a href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg> Tổng quan</a>
-        <a href="don-hang.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6M9 12h6"/></svg> Đơn hàng <b>6</b></a>
+        <a href="don-hang.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6M9 12h6"/></svg> Đơn hàng <b>2</b></a>
         <a href="san-pham.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4-3-7-8-7 0 4 3 7 8 7z"/><path d="M12 14c0-4 3-7 8-7 0 4-3 7-8 7z"/></svg> Sản phẩm</a>
-        <a href="khach-hang.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6 6 0 0 1 3.5 5.5"/></svg> Khách hàng</a>
+        <a href="khach-hang.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6 6 0 0 1 3.5 5.5"/></svg> Người dùng</a>
+        <a href="thong-ke.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg> Thống kê</a>
       </nav>
 
       <p class="side__label">Cửa hàng</p>
       <nav class="side-nav side-nav--secondary">
-        <a><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg> Kho hàng</a>
-        <a><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg> Khuyến mãi</a>
         <a href="../web-ban-hang/cham-soc.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg> Bài viết</a>
-        <a><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg> Cài đặt</a>
+        <a href="../web-ban-hang/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Về cửa hàng</a>
       </nav>
 
       <div class="side__foot">
-        <div class="side__tip">
-          <strong>Mẹo trong tuần</strong>
-          Mùa khô sắp tới, nhớ nhắc khách tăng tần suất phun sương cho cây lá lớn.
-        </div>
         <div class="side__user">
           <span class="avatar">TV</span>
           <div><strong>Lục Thanh Viên</strong><span>Quản trị viên</span></div>
         </div>
-        <nav class="side-nav">
-          <a href="../web-ban-hang/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Về cửa hàng</a>
-        </nav>
+        <a href="dang-nhap.html" class="side__logout"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H5v16h4M14 8l4 4-4 4M18 12H8"/></svg> Đăng xuất</a>
       </div>
     </aside>
 
     <!-- NỘI DUNG -->
     <div class="admin-main">
       <header class="admin-top">
-        <div class="search" role="search">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <input type="search" placeholder="Tìm đơn hàng, sản phẩm, khách hàng…" aria-label="Tìm kiếm trong trang quản trị">
-        </div>
+        <p class="admin-top__crumb">Quản trị cửa hàng <span aria-hidden="true">/</span> <strong>Sản phẩm</strong></p>
         <div class="admin-top__actions">
-          <span class="date-chip"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg> 01/11 – 12/11/2026</span>
-          <a class="icon-btn" aria-label="Thông báo (5)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 15 6 9z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><span class="count">5</span></a>
-          <a href="../web-ban-hang/index.html" class="icon-btn" aria-label="Xem cửa hàng"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a>
-          <span class="avatar" aria-label="Lục Thanh Viên">TV</span>
+          <a href="../web-ban-hang/index.html" class="btn btn--outline btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg> Xem cửa hàng</a>
+          <span class="admin-user"><span class="avatar">TV</span><span class="admin-user__text"><strong>Lục Thanh Viên</strong><small>Quản trị viên</small></span></span>
         </div>
       </header>
 
       <section class="panel panel--products" aria-labelledby="h-products">
         <div class="panel-head">
           <div>
-            <h1 id="h-products">Sản phẩm</h1>
-            <p>28 sản phẩm đang kinh doanh · 6 sản phẩm sắp hết, 1 sản phẩm hết hàng.</p>
+            <h1 id="h-products">Quản lý sản phẩm</h1>
+            <p>28 sản phẩm. Xóa sản phẩm đã bán ra sẽ chỉ ẩn khỏi website; sản phẩm chưa bán sẽ hỏi lại rồi xóa hẳn.</p>
           </div>
           <div class="panel-head__actions">
-            <button type="button" class="btn btn--outline btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg> Nhập kho</button>
-            <button type="button" class="btn btn--clay btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Thêm sản phẩm</button>
+            <a href="san-pham-them.html" class="btn btn--clay btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Thêm sản phẩm</a>
           </div>
         </div>
 
         <article class="card table-card">
-          <div class="toolbar">
-            <div class="chips" role="radiogroup" aria-label="Tình trạng kho">
-              <label><input type="radio" name="stock-status" checked>Tất cả<small>28</small></label>
-              <label><input type="radio" name="stock-status">Còn hàng<small>21</small></label>
-              <label><input type="radio" name="stock-status">Sắp hết<small>6</small></label>
-              <label><input type="radio" name="stock-status">Hết hàng<small>1</small></label>
-            </div>
-            <div class="toolbar__right">
-              <div class="search">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-                <input type="search" placeholder="Tên cây, tên khoa học…" aria-label="Tìm sản phẩm">
-              </div>
-            </div>
-          </div>
           <div class="table-scroll">
             <table class="atable">
               <thead>
-                <tr><th scope="col">Sản phẩm</th><th scope="col">Danh mục</th><th scope="col" class="num">Giá bán</th><th scope="col">Tồn kho</th><th scope="col" class="num">Đã bán (T11)</th><th scope="col">Tình trạng</th><th scope="col">Hiển thị</th><th scope="col"><span class="sr-only">Thao tác</span></th></tr>
+                <tr><th scope="col">Sản phẩm</th><th scope="col">Phân loại</th><th scope="col" class="num">Giá bán</th><th scope="col" class="num">Đã bán</th><th scope="col">Hiển thị</th><th scope="col"><span class="sr-only">Thao tác</span></th></tr>
               </thead>
               <tbody>
-                <tr><td><div class="prod"><img src="images/monstera-hold.jpg" alt=""><div><strong>Trầu Bà Lá Xẻ Monstera</strong><span>Monstera deliciosa</span></div></div></td><td>Cây trong nhà</td><td class="num">450.000₫</td><td><div class="stock" style="--w: 48%">24 cây<i></i></div></td><td class="num">38</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Monstera"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/snake.jpg" alt=""><div><strong>Lưỡi Hổ Xanh</strong><span>Dracaena trifasciata</span></div></div></td><td>Cây văn phòng</td><td class="num">320.000₫</td><td><div class="stock" style="--w: 92%">46 cây<i></i></div></td><td class="num">31</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Lưỡi Hổ"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/zz-hold.jpg" alt=""><div><strong>Kim Tiền ZZ</strong><span>Zamioculcas zamiifolia</span></div></div></td><td>Cây văn phòng</td><td class="num">390.000₫</td><td><div class="stock stock--low" style="--w: 16%">8 cây<i></i></div></td><td class="num">21</td><td><span class="pill pill--warn">Sắp hết</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Kim Tiền"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/succulent-pots.jpg" alt=""><div><strong>Combo 6 Sen Đá Tiểu Cảnh</strong><span>Echeveria mix</span></div></div></td><td>Sen đá &amp; xương rồng</td><td class="num">350.000₫</td><td><div class="stock" style="--w: 30%">15 bộ<i></i></div></td><td class="num">24</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Combo sen đá"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/orchid.jpg" alt=""><div><strong>Lan Hồ Điệp Tím Đốm</strong><span>Phalaenopsis hybrid</span></div></div></td><td>Cây trong nhà</td><td class="num">690.000₫</td><td><div class="stock stock--low" style="--w: 6%">3 chậu<i></i></div></td><td class="num">9</td><td><span class="pill pill--warn">Sắp hết</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Lan Hồ Điệp"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/fiddle.jpg" alt=""><div><strong>Bàng Singapore</strong><span>Ficus lyrata</span></div></div></td><td>Cây trong nhà</td><td class="num">680.000₫</td><td><div class="stock stock--low" style="--w: 12%">6 cây<i></i></div></td><td class="num">5</td><td><span class="pill pill--warn">Sắp hết</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Bàng Singapore"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/bougainvillea.jpg" alt=""><div><strong>Bonsai Hoa Giấy Tím</strong><span>Bougainvillea glabra</span></div></div></td><td>Bonsai</td><td class="num">1.250.000₫</td><td><div class="stock stock--low" style="--w: 4%">2 cây<i></i></div></td><td class="num">1</td><td><span class="pill pill--warn">Sắp hết</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Bonsai Hoa Giấy"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/calathea-hold.jpg" alt=""><div><strong>Đuôi Công Lancifolia</strong><span>Goeppertia insignis</span></div></div></td><td>Cây trong nhà</td><td class="num">280.000₫</td><td><div class="stock stock--out" style="--w: 0%">Hết hàng<i></i></div></td><td class="num">7</td><td><span class="pill pill--bad">Hết hàng</span></td><td><label class="switch"><input type="checkbox" aria-label="Hiển thị Đuôi Công"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/scindapsus.jpg" alt=""><div><strong>Trầu Bà Bạc Satin</strong><span>Scindapsus pictus</span></div></div></td><td>Cây treo</td><td class="num">260.000₫</td><td><div class="stock" style="--w: 36%">18 chậu<i></i></div></td><td class="num">6</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Trầu Bà Bạc"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
-                <tr><td><div class="prod"><img src="images/plant-group.jpg" alt=""><div><strong>Combo 5 Cây Lọc Không Khí</strong><span>Mix cây lá trong nhà</span></div></div></td><td>Cây trong nhà</td><td class="num">1.190.000₫</td><td><div class="stock" style="--w: 22%">11 bộ<i></i></div></td><td class="num">4</td><td><span class="pill pill--good">Còn hàng</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Combo 5 cây"><span></span></label></td><td><div class="row-actions"><a aria-label="Sửa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" aria-label="Xóa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/monstera-hold.jpg" alt=""><div><strong>Trầu Bà Lá Xẻ Monstera</strong><span>Monstera deliciosa</span></div></div></td><td>Cây trong nhà</td><td class="num">450.000₫</td><td class="num">2</td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Trầu Bà Lá Xẻ Monstera trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-01.html" aria-label="Sửa Trầu Bà Lá Xẻ Monstera"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-01" aria-label="Xóa Trầu Bà Lá Xẻ Monstera"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/fiddle.jpg" alt=""><div><strong>Bàng Singapore</strong><span>Ficus lyrata</span></div></div></td><td>Cây trong nhà</td><td class="num">680.000₫</td><td class="num"><span class="muted">Chưa bán</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Bàng Singapore trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-02.html" aria-label="Sửa Bàng Singapore"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-02" aria-label="Xóa Bàng Singapore"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/snake.jpg" alt=""><div><strong>Lưỡi Hổ Xanh</strong><span>Dracaena trifasciata</span></div></div></td><td>Cây văn phòng</td><td class="num">320.000₫</td><td class="num">3</td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Lưỡi Hổ Xanh trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-03.html" aria-label="Sửa Lưỡi Hổ Xanh"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-03" aria-label="Xóa Lưỡi Hổ Xanh"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/zz-hold.jpg" alt=""><div><strong>Kim Tiền ZZ</strong><span>Zamioculcas zamiifolia</span></div></div></td><td>Cây văn phòng</td><td class="num">390.000₫</td><td class="num">1</td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Kim Tiền ZZ trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-04.html" aria-label="Sửa Kim Tiền ZZ"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-04" aria-label="Xóa Kim Tiền ZZ"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/pothos-hang.jpg" alt=""><div><strong>Trầu Bà Vàng Giỏ Treo</strong><span>Epipremnum aureum</span></div></div></td><td>Cây treo</td><td class="num">320.000₫</td><td class="num">1</td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Trầu Bà Vàng Giỏ Treo trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-05.html" aria-label="Sửa Trầu Bà Vàng Giỏ Treo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-05" aria-label="Xóa Trầu Bà Vàng Giỏ Treo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/bonsai-ginseng.jpg" alt=""><div><strong>Bonsai Sanh Mini</strong><span>Ficus microcarpa</span></div></div></td><td>Bonsai nghệ thuật</td><td class="num">650.000₫</td><td class="num">1</td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Bonsai Sanh Mini trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-06.html" aria-label="Sửa Bonsai Sanh Mini"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-06" aria-label="Xóa Bonsai Sanh Mini"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/bougainvillea.jpg" alt=""><div><strong>Bonsai Hoa Giấy Tím</strong><span>Bougainvillea glabra</span></div></div></td><td>Bonsai nghệ thuật</td><td class="num">1.250.000₫</td><td class="num">1</td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Bonsai Hoa Giấy Tím trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-07.html" aria-label="Sửa Bonsai Hoa Giấy Tím"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-07" aria-label="Xóa Bonsai Hoa Giấy Tím"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/haworthia.jpg" alt=""><div><strong>Sen Đá Móng Rồng</strong><span>Haworthia attenuata</span></div></div></td><td>Sen đá &amp; xương rồng</td><td class="num">120.000₫</td><td class="num">3</td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Sen Đá Móng Rồng trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-08.html" aria-label="Sửa Sen Đá Móng Rồng"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-08" aria-label="Xóa Sen Đá Móng Rồng"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/cactus-orange.jpg" alt=""><div><strong>Xương Rồng Trụ Chậu Cam</strong><span>Cereus peruvianus</span></div></div></td><td>Sen đá &amp; xương rồng</td><td class="num">95.000₫</td><td class="num"><span class="muted">Chưa bán</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Xương Rồng Trụ Chậu Cam trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-09.html" aria-label="Sửa Xương Rồng Trụ Chậu Cam"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-09" aria-label="Xóa Xương Rồng Trụ Chậu Cam"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
+                <tr><td><div class="prod"><img src="../web-ban-hang/images/calathea-hold.jpg" alt=""><div><strong>Đuôi Công Lancifolia</strong><span>Goeppertia insignis</span></div></div></td><td>Cây trong nhà</td><td class="num">280.000₫</td><td class="num"><span class="muted">Chưa bán</span></td><td><label class="switch"><input type="checkbox" checked aria-label="Hiển thị Đuôi Công Lancifolia trên website"><span></span></label></td><td><div class="row-actions"><a href="san-pham-sua-10.html" aria-label="Sửa Đuôi Công Lancifolia"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="m14 6 4 4"/></svg></a><a class="danger" href="#xoa-10" aria-label="Xóa Đuôi Công Lancifolia"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></a></div></td></tr>
               </tbody>
             </table>
           </div>
@@ -117,12 +90,103 @@
             <span>Hiển thị 1–10 trong 28 sản phẩm</span>
             <nav class="pagination" aria-label="Phân trang sản phẩm">
               <span class="is-disabled" aria-hidden="true"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>
-              <a aria-current="page">1</a><a>2</a><a>3</a>
-              <a aria-label="Trang sau"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a href="san-pham.html" aria-current="page">1</a><a href="san-pham-2.html">2</a><a href="san-pham-3.html">3</a>
+              <a href="san-pham-2.html" aria-label="Trang sau"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             </nav>
           </div>
         </article>
       </section>
+
+      <div class="modal" id="xoa-01" role="dialog" aria-modal="true" aria-labelledby="mt-01">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--warn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h2 id="mt-01">Sản phẩm đã được bán ra</h2>
+          <p>“Trầu Bà Lá Xẻ Monstera” đã nằm trong 2 đơn hàng (2 sản phẩm đã bán) nên <strong>không thể xóa</strong>. Sản phẩm sẽ được <strong>ẩn khỏi website</strong>, dữ liệu đơn hàng cũ vẫn được giữ nguyên.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Để lại</a><a href="san-pham.html" class="btn btn--clay">Ẩn sản phẩm</a></div>
+        </div>
+      </div>
+      <div class="modal" id="xoa-02" role="dialog" aria-modal="true" aria-labelledby="mt-02">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--bad"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></span>
+          <h2 id="mt-02">Xóa sản phẩm này?</h2>
+          <p>“Bàng Singapore” chưa được bán ra lần nào. Bạn có chắc muốn <strong>xóa hẳn</strong> sản phẩm này? Thao tác không thể hoàn tác.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Hủy</a><a href="san-pham.html" class="btn btn--danger">Xóa sản phẩm</a></div>
+        </div>
+      </div>
+      <div class="modal" id="xoa-03" role="dialog" aria-modal="true" aria-labelledby="mt-03">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--warn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h2 id="mt-03">Sản phẩm đã được bán ra</h2>
+          <p>“Lưỡi Hổ Xanh” đã nằm trong 2 đơn hàng (3 sản phẩm đã bán) nên <strong>không thể xóa</strong>. Sản phẩm sẽ được <strong>ẩn khỏi website</strong>, dữ liệu đơn hàng cũ vẫn được giữ nguyên.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Để lại</a><a href="san-pham.html" class="btn btn--clay">Ẩn sản phẩm</a></div>
+        </div>
+      </div>
+      <div class="modal" id="xoa-04" role="dialog" aria-modal="true" aria-labelledby="mt-04">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--warn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h2 id="mt-04">Sản phẩm đã được bán ra</h2>
+          <p>“Kim Tiền ZZ” đã nằm trong 1 đơn hàng (1 sản phẩm đã bán) nên <strong>không thể xóa</strong>. Sản phẩm sẽ được <strong>ẩn khỏi website</strong>, dữ liệu đơn hàng cũ vẫn được giữ nguyên.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Để lại</a><a href="san-pham.html" class="btn btn--clay">Ẩn sản phẩm</a></div>
+        </div>
+      </div>
+      <div class="modal" id="xoa-05" role="dialog" aria-modal="true" aria-labelledby="mt-05">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--warn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h2 id="mt-05">Sản phẩm đã được bán ra</h2>
+          <p>“Trầu Bà Vàng Giỏ Treo” đã nằm trong 1 đơn hàng (1 sản phẩm đã bán) nên <strong>không thể xóa</strong>. Sản phẩm sẽ được <strong>ẩn khỏi website</strong>, dữ liệu đơn hàng cũ vẫn được giữ nguyên.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Để lại</a><a href="san-pham.html" class="btn btn--clay">Ẩn sản phẩm</a></div>
+        </div>
+      </div>
+      <div class="modal" id="xoa-06" role="dialog" aria-modal="true" aria-labelledby="mt-06">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--warn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h2 id="mt-06">Sản phẩm đã được bán ra</h2>
+          <p>“Bonsai Sanh Mini” đã nằm trong 1 đơn hàng (1 sản phẩm đã bán) nên <strong>không thể xóa</strong>. Sản phẩm sẽ được <strong>ẩn khỏi website</strong>, dữ liệu đơn hàng cũ vẫn được giữ nguyên.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Để lại</a><a href="san-pham.html" class="btn btn--clay">Ẩn sản phẩm</a></div>
+        </div>
+      </div>
+      <div class="modal" id="xoa-07" role="dialog" aria-modal="true" aria-labelledby="mt-07">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--warn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h2 id="mt-07">Sản phẩm đã được bán ra</h2>
+          <p>“Bonsai Hoa Giấy Tím” đã nằm trong 1 đơn hàng (1 sản phẩm đã bán) nên <strong>không thể xóa</strong>. Sản phẩm sẽ được <strong>ẩn khỏi website</strong>, dữ liệu đơn hàng cũ vẫn được giữ nguyên.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Để lại</a><a href="san-pham.html" class="btn btn--clay">Ẩn sản phẩm</a></div>
+        </div>
+      </div>
+      <div class="modal" id="xoa-08" role="dialog" aria-modal="true" aria-labelledby="mt-08">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--warn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h2 id="mt-08">Sản phẩm đã được bán ra</h2>
+          <p>“Sen Đá Móng Rồng” đã nằm trong 2 đơn hàng (3 sản phẩm đã bán) nên <strong>không thể xóa</strong>. Sản phẩm sẽ được <strong>ẩn khỏi website</strong>, dữ liệu đơn hàng cũ vẫn được giữ nguyên.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Để lại</a><a href="san-pham.html" class="btn btn--clay">Ẩn sản phẩm</a></div>
+        </div>
+      </div>
+      <div class="modal" id="xoa-09" role="dialog" aria-modal="true" aria-labelledby="mt-09">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--bad"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></span>
+          <h2 id="mt-09">Xóa sản phẩm này?</h2>
+          <p>“Xương Rồng Trụ Chậu Cam” chưa được bán ra lần nào. Bạn có chắc muốn <strong>xóa hẳn</strong> sản phẩm này? Thao tác không thể hoàn tác.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Hủy</a><a href="san-pham.html" class="btn btn--danger">Xóa sản phẩm</a></div>
+        </div>
+      </div>
+      <div class="modal" id="xoa-10" role="dialog" aria-modal="true" aria-labelledby="mt-10">
+        <a class="modal__bg" href="#" aria-label="Đóng"></a>
+        <div class="modal__box">
+          <span class="modal__icon modal__icon--bad"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></span>
+          <h2 id="mt-10">Xóa sản phẩm này?</h2>
+          <p>“Đuôi Công Lancifolia” chưa được bán ra lần nào. Bạn có chắc muốn <strong>xóa hẳn</strong> sản phẩm này? Thao tác không thể hoàn tác.</p>
+          <div class="modal__actions"><a href="#" class="btn btn--outline">Hủy</a><a href="san-pham.html" class="btn btn--danger">Xóa sản phẩm</a></div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng nhập — Quản trị Lục Viên</title>
+  <meta name="description" content="Trang quản trị cửa hàng Lục Viên: đơn hàng, sản phẩm, người dùng và thống kê.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0e1d15">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231d3a2c'/%3E%3Cpath d='M15 25a8 8 0 0 1-8-8c0-7 6-10.5 18-10 .5 12.5-4 18-10 18zM7 25c3.5-5.5 7.5-9 12.5-11' fill='none' stroke='%23bccdab' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="page-admin-login">
+  <main class="alogin">
+    <section class="alogin__art" aria-label="Lục Viên Plant Atelier">
+      <img src="../web-ban-hang/images/jungle.jpg" alt="" width="1200" height="1500">
+      <div class="alogin__art-inner">
+        <a href="dang-nhap.html" class="logo alogin__logo" aria-label="Lục Viên – đăng nhập quản trị">
+          <span class="logo__mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-6 5-9.5 16-9 .5 11-3.5 16-9 16z"/><path d="M4 20c3-5 6.5-8 11-10"/></svg></span>
+          <span class="logo__text">Lục Viên<small>Quản trị</small></span>
+        </a>
+        <div class="alogin__quote">
+          <blockquote>“Mỗi đơn hàng là một chậu cây tìm được nhà mới.”</blockquote>
+          <ul>
+            <li><b>15</b><span>đơn hàng mẫu</span></li>
+            <li><b>28</b><span>sản phẩm</span></li>
+            <li><b>10</b><span>người dùng</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="alogin__panel">
+      <div class="alogin__box">
+        <span class="alogin__badge"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg> Khu vực quản trị</span>
+        <h1>Chào mừng <em>trở lại</em></h1>
+        <p class="alogin__lead">Đăng nhập để quản lý đơn hàng, sản phẩm và người dùng của cửa hàng Lục Viên.</p>
+        <form class="alogin__form" action="index.html" method="get">
+          <div class="afield"><label for="a-user">Tên đăng nhập</label><input class="input" id="a-user" type="text" autocomplete="username" placeholder="admin" value="admin" required></div>
+          <div class="afield"><label for="a-pass">Mật khẩu</label><input class="input" id="a-pass" type="password" autocomplete="current-password" placeholder="••••••••" value="admin123" required></div>
+          <label class="check"><input type="checkbox" checked> Ghi nhớ đăng nhập</label>
+          <button type="submit" class="btn btn--clay btn--lg btn--block">Đăng nhập <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="alogin__demo">Tài khoản mẫu đã điền sẵn — bấm Đăng nhập để vào trang quản trị.</p>
+        </form>
+        <p class="alogin__note">Không phải quản trị viên? <a href="../web-ban-hang/index.html">Về cửa hàng</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

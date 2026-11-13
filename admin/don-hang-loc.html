@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kết quả lọc đơn hàng — Quản trị Lục Viên</title>
+  <meta name="description" content="Trang quản trị cửa hàng Lục Viên: đơn hàng, sản phẩm, người dùng và thống kê.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0e1d15">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231d3a2c'/%3E%3Cpath d='M15 25a8 8 0 0 1-8-8c0-7 6-10.5 18-10 .5 12.5-4 18-10 18zM7 25c3.5-5.5 7.5-9 12.5-11' fill='none' stroke='%23bccdab' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="page-admin">
+  <div class="admin">
+    <!-- THANH BÊN -->
+    <aside class="side" aria-label="Điều hướng quản trị">
+      <a href="index.html" class="logo" aria-label="Lục Viên – trang tổng quan quản trị">
+        <span class="logo__mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-6 5-9.5 16-9 .5 11-3.5 16-9 16z"/><path d="M4 20c3-5 6.5-8 11-10"/></svg></span>
+        <span class="logo__text">Lục Viên<small>Quản trị</small></span>
+      </a>
+
+      <p class="side__label">Quản lý</p>
+      <nav class="side-nav">
+        <a href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg> Tổng quan</a>
+        <a href="don-hang.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6M9 12h6"/></svg> Đơn hàng <b>2</b></a>
+        <a href="san-pham.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4-3-7-8-7 0 4 3 7 8 7z"/><path d="M12 14c0-4 3-7 8-7 0 4-3 7-8 7z"/></svg> Sản phẩm</a>
+        <a href="khach-hang.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6 6 0 0 1 3.5 5.5"/></svg> Người dùng</a>
+        <a href="thong-ke.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg> Thống kê</a>
+      </nav>
+
+      <p class="side__label">Cửa hàng</p>
+      <nav class="side-nav side-nav--secondary">
+        <a href="../web-ban-hang/cham-soc.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg> Bài viết</a>
+        <a href="../web-ban-hang/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Về cửa hàng</a>
+      </nav>
+
+      <div class="side__foot">
+        <div class="side__user">
+          <span class="avatar">TV</span>
+          <div><strong>Lục Thanh Viên</strong><span>Quản trị viên</span></div>
+        </div>
+        <a href="dang-nhap.html" class="side__logout"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H5v16h4M14 8l4 4-4 4M18 12H8"/></svg> Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- NỘI DUNG -->
+    <div class="admin-main">
+      <header class="admin-top">
+        <p class="admin-top__crumb">Quản trị cửa hàng <span aria-hidden="true">/</span> <strong>Đơn hàng / Kết quả lọc</strong></p>
+        <div class="admin-top__actions">
+          <a href="../web-ban-hang/index.html" class="btn btn--outline btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg> Xem cửa hàng</a>
+          <span class="admin-user"><span class="avatar">TV</span><span class="admin-user__text"><strong>Lục Thanh Viên</strong><small>Quản trị viên</small></span></span>
+        </div>
+      </header>
+
+      <section class="panel panel--orders" aria-labelledby="h-orders">
+        <div class="panel-head">
+          <div><h1 id="h-orders">Kết quả lọc đơn hàng</h1><p>Tình trạng “Đã xác nhận” · đặt từ 11/11/2026 đến 12/11/2026 · TP. Hồ Chí Minh · mọi quận/huyện — <strong>3 đơn</strong>.</p></div>
+          <div class="panel-head__actions"><a href="don-hang.html" class="btn btn--outline btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Tất cả đơn hàng</a></div>
+        </div>
+        <form class="card filter-bar" action="don-hang-loc.html" method="get">
+          <div class="afield"><label for="f-status">Tình trạng đơn</label><select class="select" id="f-status"><option>Tất cả</option><option>Chưa xác nhận</option><option selected>Đã xác nhận</option><option>Đã giao</option><option>Đã hủy</option></select></div>
+          <div class="afield"><label for="f-from">Đặt từ ngày</label><input class="input" id="f-from" type="date" value="2026-11-11"></div>
+          <div class="afield"><label for="f-to">Đến ngày</label><input class="input" id="f-to" type="date" value="2026-11-12"></div>
+          <div class="afield"><label for="f-city">Thành phố</label><select class="select" id="f-city"><option>Tất cả</option><option selected>TP. Hồ Chí Minh</option><option>Hà Nội</option><option>Đà Nẵng</option></select></div>
+          <div class="afield"><label for="f-district">Quận / Huyện</label><select class="select" id="f-district"><option>Tất cả</option><option>Quận 1</option><option>Quận 3</option><option>Quận 5</option><option>Quận 7</option><option>Quận 10</option><option>Bình Thạnh</option><option>Gò Vấp</option><option>Phú Nhuận</option><option>Tân Bình</option><option>TP. Thủ Đức</option></select></div>
+          <div class="filter-bar__actions"><button type="submit" class="btn btn--sm"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg> Lọc đơn</button><a href="don-hang.html" class="btn btn--outline btn--sm">Xóa lọc</a></div>
+        </form>
+        <p class="rule-note"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg> Tình trạng chỉ cập nhật <strong>xuôi</strong>: Chưa xác nhận → Đã xác nhận → Đã giao. Đơn chưa giao có thể hủy; đơn đã giao hoặc đã hủy không thể đổi lại.</p>
+        <article class="card table-card">
+          <div class="table-scroll">
+            <table class="atable atable--wide">
+              <thead>
+                <tr><th scope="col">Mã đơn · Thời gian đặt</th><th scope="col">Khách hàng</th><th scope="col">Giao đến</th><th scope="col" class="num">Tổng tiền · Thanh toán</th><th scope="col">Tình trạng</th><th scope="col">Cập nhật tình trạng</th><th scope="col"><span class="sr-only">Chi tiết</span></th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="code"><a href="don-hang-chi-tiet-0428.html">#LV-261112-0428</a><span class="sub">12/11/2026 · 10:42</span></td><td><div class="who"><span class="avatar avatar--clay">TH</span><div><strong>Thu Hà</strong><span>0909 123 128</span></div></div></td><td>Quận 7<span class="sub">TP. Hồ Chí Minh</span></td><td class="num">1.404.000₫<span class="sub">Trực tuyến</span></td><td><span class="pill pill--info">Đã xác nhận</span></td><td><form class="status-form" action="don-hang.html" method="get"><label class="sr-only" for="st-0428">Cập nhật tình trạng đơn 0428</label><select class="status-select" id="st-0428"><option selected>Đã xác nhận</option><option>Đã giao</option><option>Hủy đơn</option></select><button type="submit" class="btn btn--outline btn--sm">Lưu</button></form></td><td><div class="row-actions"><a href="don-hang-chi-tiet-0428.html" aria-label="Xem chi tiết đơn 0428"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a></div></td></tr>
+                <tr><td class="code"><a href="don-hang-chi-tiet-0425.html">#LV-261111-0425</a><span class="sub">11/11/2026 · 19:47</span></td><td><div class="who"><span class="avatar">QB</span><div><strong>Quốc Bảo</strong><span>0903 123 771</span></div></div></td><td>Bình Thạnh<span class="sub">TP. Hồ Chí Minh</span></td><td class="num">1.250.000₫<span class="sub">Trực tuyến</span></td><td><span class="pill pill--info">Đã xác nhận</span></td><td><form class="status-form" action="don-hang.html" method="get"><label class="sr-only" for="st-0425">Cập nhật tình trạng đơn 0425</label><select class="status-select" id="st-0425"><option selected>Đã xác nhận</option><option>Đã giao</option><option>Hủy đơn</option></select><button type="submit" class="btn btn--outline btn--sm">Lưu</button></form></td><td><div class="row-actions"><a href="don-hang-chi-tiet-0425.html" aria-label="Xem chi tiết đơn 0425"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a></div></td></tr>
+                <tr><td class="code"><a href="don-hang-chi-tiet-0424.html">#LV-261111-0424</a><span class="sub">11/11/2026 · 16:20</span></td><td><div class="who"><span class="avatar avatar--clay">KL</span><div><strong>Khánh Linh</strong><span>0868 123 219</span></div></div></td><td>Phú Nhuận<span class="sub">TP. Hồ Chí Minh</span></td><td class="num">970.000₫<span class="sub">Trực tuyến</span></td><td><span class="pill pill--info">Đã xác nhận</span></td><td><form class="status-form" action="don-hang.html" method="get"><label class="sr-only" for="st-0424">Cập nhật tình trạng đơn 0424</label><select class="status-select" id="st-0424"><option selected>Đã xác nhận</option><option>Đã giao</option><option>Hủy đơn</option></select><button type="submit" class="btn btn--outline btn--sm">Lưu</button></form></td><td><div class="row-actions"><a href="don-hang-chi-tiet-0424.html" aria-label="Xem chi tiết đơn 0424"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></a></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-foot"><span>Hiển thị 3 trong 15 đơn hàng</span></div>
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

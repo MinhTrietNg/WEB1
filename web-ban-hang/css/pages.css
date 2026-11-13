@@ -130,9 +130,9 @@
 .hero__seal text {
   fill: currentColor;
   font-family: var(--f-body);
-  font-size: 10.5px;
+  font-size: 9.5px;
   font-weight: 600;
-  letter-spacing: 3.2px;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -3144,7 +3144,7 @@ body:has(#lich-su:target) .auth__notice--hist { display: block; }
   .hero__stats dt { font-size: 1.7rem; }
   .hero__visual { padding: 0 0 28px 20px; }
   .hero__seal { width: 96px; height: 96px; }
-  .hero__seal text { font-size: 10px; letter-spacing: 2px; }
+  .hero__seal text { font-size: 9.5px; }
   .hero__card { width: 220px; bottom: 40px; padding: 10px 14px 10px 10px; }
   .hero__card img { width: 52px; height: 52px; }
 

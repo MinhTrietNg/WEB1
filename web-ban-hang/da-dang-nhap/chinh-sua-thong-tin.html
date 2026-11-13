@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Đặt hàng thành công — Lục Viên</title>
-  <meta name="description" content="Cảm ơn bạn đã đặt cây tại Lục Viên.">
+  <title>Chỉnh sửa thông tin — Lục Viên</title>
+  <meta name="description" content="Chỉnh sửa thông tin khách hàng, sổ địa chỉ và mật khẩu.">
   <meta name="theme-color" content="#1d3a2c">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231d3a2c'/%3E%3Cpath d='M15 25a8 8 0 0 1-8-8c0-7 6-10.5 18-10 .5 12.5-4 18-10 18zM7 25c3.5-5.5 7.5-9 12.5-11' fill='none' stroke='%23bccdab' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
 </head>
-<body class="page-success">
+<body class="page-account">
   <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
 
   <div class="topbar">
@@ -68,8 +68,8 @@
                 <div>
                   <p class="mega__title">Theo loại cây</p>
                   <ul class="mega__list">
-                    <li><a href="san-pham.html">Cây trong nhà <span>17</span></a></li>
-                    <li><a href="san-pham.html">Cây văn phòng <span>17</span></a></li>
+                    <li><a href="san-pham.html">Cây trong nhà <span>7</span></a></li>
+                    <li><a href="san-pham.html">Cây văn phòng <span>6</span></a></li>
                     <li><a href="san-pham.html">Sen đá &amp; xương rồng <span>7</span></a></li>
                     <li><a href="san-pham.html">Bonsai nghệ thuật <span>3</span></a></li>
                     <li><a href="san-pham.html">Cây treo <span>5</span></a></li>
@@ -96,7 +96,7 @@
                   </ul>
                 </div>
                 <a class="mega__feature" href="chi-tiet.html">
-                  <img src="images/monstera-room.jpg" alt="Monstera đặt cạnh ghế trắng trong phòng khách" loading="lazy">
+                  <img src="../images/monstera-room.jpg" alt="Monstera đặt cạnh ghế trắng trong phòng khách" loading="lazy">
                   <span class="mega__feature-body">
                     <span>Bộ sưu tập Thu Đông</span>
                     <strong>Monstera &amp; những người bạn lá lớn</strong>
@@ -117,58 +117,112 @@
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input type="search" name="q" placeholder="Tìm cây, chậu…" aria-label="Tìm kiếm sản phẩm">
         </div>
-        <a href="dang-nhap.html" class="icon-btn icon-btn--account" aria-label="Tài khoản"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
-        <a href="dang-nhap.html" class="icon-btn" aria-label="Danh sách yêu thích (2)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.4-9.2C1.2 7.9 3.4 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.6 0 5.8 3.4 4.4 6.8-1.9 4.6-9.4 9.2-9.4 9.2z"/></svg><span class="count">2</span></a>
+        <a href="tai-khoan.html" class="header-user" aria-label="Tài khoản của Thu Hà"><span class="avatar">TH</span><span class="header-user__name">Thu Hà</span></a>
+        <a href="../index.html" class="header-logout" aria-label="Đăng xuất" title="Đăng xuất"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg><span>Đăng xuất</span></a>
         <a href="gio-hang.html" class="icon-btn" aria-label="Giỏ hàng (3 sản phẩm)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9L5 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="count">3</span></a>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="success">
-      <div class="container container--narrow">
-        <ol class="checkout-steps" style="margin: 0 0 56px">
-          <li class="is-done"><b><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg></b>Giỏ hàng</li>
-          <li class="is-done"><b><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg></b>Thanh toán</li>
-          <li class="is-current"><b>3</b>Hoàn tất</li>
+    <section class="page-hero page-hero--slim">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="tai-khoan.html">Thông tin khách hàng</a></li>
+          <li><span aria-current="page">Chỉnh sửa</span></li>
         </ol>
-
-        <div class="success__check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg></div>
-        <h1>Cảm ơn bạn, cây đang <em>lên đường</em>!</h1>
-        <p class="lede">Đơn hàng đã được ghi nhận. Thợ vườn đang sang chậu và chuẩn bị cây cho bạn. Tin nhắn xác nhận sẽ được gửi qua Zalo và SMS trong vài phút tới.</p>
-
-        <div class="order-box">
-          <div><small>Mã đơn hàng</small><strong>#LV-261112-0428</strong></div>
-          <div><small>Ngày đặt</small><strong>12/11/2026</strong></div>
-          <div><small>Tổng thanh toán</small><strong>1.404.000₫</strong></div>
-          <div><small>Dự kiến giao</small><strong>Hôm nay, 12–16 giờ</strong></div>
-        </div>
-
-        <ol class="timeline-h">
-          <li class="is-done">Đã xác nhận<small>10:42</small></li>
-          <li class="is-done">Đang sang chậu<small>Thợ vườn: anh Tâm</small></li>
-          <li>Đang giao<small>Dự kiến 13:30</small></li>
-          <li>Đã nhận cây<small>Bảo hành bắt đầu</small></li>
-        </ol>
-
-        <div class="success__actions">
-          <a href="cham-soc.html" class="btn btn--lg"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg> Đọc cẩm nang chăm cây</a>
-          <a href="san-pham.html" class="btn btn--outline btn--lg">Tiếp tục mua sắm</a>
-        </div>
+        <h1>Chỉnh sửa <em>thông tin</em></h1>
+        <p class="lede">Cập nhật thông tin cá nhân, sổ địa chỉ hoặc mật khẩu. Bấm “Lưu thay đổi” để quay lại trang thông tin khách hàng.</p>
       </div>
     </section>
 
-    <section class="section section--tight section--cream">
-      <div class="container">
-        <div class="cta-band">
-          <span class="eyebrow">Quà tặng cho bạn</span>
-          <h2>Giới thiệu bạn bè, cả hai cùng nhận <em>50.000₫</em></h2>
-          <p>Chia sẻ mã <strong style="color: var(--c-gold)">BANXANH</strong> — bạn bè giảm 50.000₫ cho đơn đầu tiên, bạn nhận 50.000₫ vào ví điểm thưởng.</p>
-          <div class="cta-band__actions">
-            <a href="index.html" class="btn btn--light"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8S10.5 3.5 8 4.2 7.5 8 12 8zM12 8s1.5-4.5 4-3.8.5 3.8-4 3.8z"/></svg> Chia sẻ mã ngay</a>
-            <a href="index.html" class="btn btn--ghost-light">Về trang chủ</a>
+    <section class="section section--tight">
+      <div class="container acct">
+        <aside class="acct__side" aria-label="Tài khoản">
+          <div class="acct__user">
+            <span class="avatar">TH</span>
+            <div><strong>Nguyễn Thu Hà</strong><span>thuha@example.com</span><span>0909 123 128</span></div>
           </div>
-        </div>
+          <nav class="acct__nav" aria-label="Menu tài khoản">
+            <a href="tai-khoan.html">Thông tin khách hàng</a>
+            <a href="chinh-sua-thong-tin.html" aria-current="page">Chỉnh sửa thông tin</a>
+            <a href="lich-su.html">Lịch sử mua hàng</a>
+            <a href="gio-hang.html">Giỏ hàng</a>
+            <a href="san-pham.html">Tiếp tục mua sắm</a>
+            <a href="../index.html">Đăng xuất</a>
+          </nav>
+        </aside>
+
+        <form class="acct__main" action="tai-khoan.html#da-luu" method="get">
+          <article class="profile">
+            <header class="profile__head"><h2>Thông tin cá nhân</h2></header>
+            <div class="profile__body">
+              <div class="form-grid">
+                <div class="field"><label for="e-name">Họ và tên</label><input class="input" id="e-name" type="text" autocomplete="name" value="Nguyễn Thu Hà" required></div>
+                <div class="field"><label for="e-email">Email</label><input class="input" id="e-email" type="email" autocomplete="email" value="thuha@example.com" required></div>
+                <div class="field">
+                  <label for="e-phone">Số điện thoại</label>
+                  <input class="input" id="e-phone" type="tel" inputmode="numeric" autocomplete="tel" maxlength="10" value="0909123128" required pattern="(03|05|07|08|09)[0-9]{8}" title="Số điện thoại gồm 10 chữ số, bắt đầu bằng 03, 05, 07, 08 hoặc 09">
+                  <small class="field__hint">10 chữ số, bắt đầu bằng 03, 05, 07, 08 hoặc 09.</small>
+                  <small class="field__error" role="alert">Số điện thoại chưa hợp lệ: cần đúng 10 chữ số, bắt đầu bằng 03, 05, 07, 08 hoặc 09.</small>
+                </div>
+                <div class="field"><label for="e-dob">Ngày sinh</label><input class="input" id="e-dob" type="date" value="1996-06-14"></div>
+                <div class="field span-all">
+                  <span class="field__label">Giới tính</span>
+                  <div class="radio-row" role="radiogroup" aria-label="Giới tính">
+                    <label class="check"><input type="radio" name="gender" checked> Nữ</label>
+                    <label class="check"><input type="radio" name="gender"> Nam</label>
+                    <label class="check"><input type="radio" name="gender"> Khác</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="profile">
+            <header class="profile__head"><h2>Sổ địa chỉ</h2></header>
+            <div class="profile__body">
+            <fieldset class="addr-edit">
+              <legend>Nhà riêng</legend>
+              <div class="form-grid">
+                <div class="field"><label for="a1-tag">Tên gọi địa chỉ</label><input class="input" id="a1-tag" type="text" value="Nhà riêng" required></div>
+                <div class="field"><label for="a1-street">Số nhà, tên đường</label><input class="input" id="a1-street" type="text" value="17 Đường số 1" required></div>
+                <div class="field"><label for="a1-ward">Phường / Xã</label><input class="input" id="a1-ward" type="text" value="Phường 3"></div>
+                <div class="field"><label for="a1-district">Quận / Huyện</label><select class="select" id="a1-district"><option>Quận 1</option><option>Quận 3</option><option>Quận 5</option><option selected>Quận 7</option><option>Quận 10</option><option>Bình Thạnh</option><option>Gò Vấp</option><option>Phú Nhuận</option><option>Tân Bình</option><option>TP. Thủ Đức</option></select></div>
+                <div class="field"><label for="a1-city">Tỉnh / Thành phố</label><select class="select" id="a1-city"><option selected>TP. Hồ Chí Minh</option><option>Hà Nội</option><option>Đà Nẵng</option><option>Bình Dương</option><option>Đồng Nai</option></select></div>
+                <label class="check addr-edit__default"><input type="radio" name="default-addr" checked> Đặt làm địa chỉ mặc định</label>
+              </div>
+            </fieldset>
+            <fieldset class="addr-edit">
+              <legend>Văn phòng</legend>
+              <div class="form-grid">
+                <div class="field"><label for="a2-tag">Tên gọi địa chỉ</label><input class="input" id="a2-tag" type="text" value="Văn phòng" required></div>
+                <div class="field"><label for="a2-street">Số nhà, tên đường</label><input class="input" id="a2-street" type="text" value="45 Lê Lợi" required></div>
+                <div class="field"><label for="a2-ward">Phường / Xã</label><input class="input" id="a2-ward" type="text" value="Phường Bến Nghé"></div>
+                <div class="field"><label for="a2-district">Quận / Huyện</label><select class="select" id="a2-district"><option selected>Quận 1</option><option>Quận 3</option><option>Quận 5</option><option>Quận 7</option><option>Quận 10</option><option>Bình Thạnh</option><option>Gò Vấp</option><option>Phú Nhuận</option><option>Tân Bình</option><option>TP. Thủ Đức</option></select></div>
+                <div class="field"><label for="a2-city">Tỉnh / Thành phố</label><select class="select" id="a2-city"><option selected>TP. Hồ Chí Minh</option><option>Hà Nội</option><option>Đà Nẵng</option><option>Bình Dương</option><option>Đồng Nai</option></select></div>
+                <label class="check addr-edit__default"><input type="radio" name="default-addr"> Đặt làm địa chỉ mặc định</label>
+              </div>
+            </fieldset>
+            </div>
+          </article>
+
+          <article class="profile">
+            <header class="profile__head"><h2>Đổi mật khẩu</h2><span class="profile__note">Không bắt buộc</span></header>
+            <div class="profile__body">
+              <div class="form-grid">
+                <div class="field"><label for="e-pass-old">Mật khẩu hiện tại</label><input class="input" id="e-pass-old" type="password" autocomplete="current-password" placeholder="Để trống nếu không đổi"></div>
+                <div class="field"><label for="e-pass-new">Mật khẩu mới</label><input class="input" id="e-pass-new" type="password" autocomplete="new-password" minlength="6" placeholder="Ít nhất 6 ký tự"></div>
+              </div>
+            </div>
+          </article>
+
+          <div class="profile__actions">
+            <button type="submit" class="btn btn--clay">Lưu thay đổi</button>
+            <a href="tai-khoan.html" class="btn btn--outline">Hủy</a>
+          </div>
+        </form>
       </div>
     </section>
   </main>
@@ -220,7 +274,7 @@
             <li><a href="cham-soc.html">Cẩm nang chăm cây</a></li>
             <li><a href="lien-he.html">Chính sách giao hàng</a></li>
             <li><a href="lien-he.html">Bảo hành 30 ngày</a></li>
-            <li><a href="dang-nhap.html">Tra cứu đơn hàng</a></li>
+            <li><a href="lich-su.html">Tra cứu đơn hàng</a></li>
             <li><a href="lien-he.html">Câu hỏi thường gặp</a></li>
           </ul>
         </div>

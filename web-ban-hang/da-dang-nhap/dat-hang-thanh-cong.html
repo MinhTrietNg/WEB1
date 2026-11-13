@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thanh toán — Lục Viên</title>
-  <meta name="description" content="Hoàn tất đơn hàng cây cảnh tại Lục Viên: thông tin giao hàng, khung giờ nhận cây và phương thức thanh toán.">
+  <title>Đặt hàng thành công — Lục Viên</title>
+  <meta name="description" content="Cảm ơn bạn đã đặt cây tại Lục Viên.">
   <meta name="theme-color" content="#1d3a2c">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231d3a2c'/%3E%3Cpath d='M15 25a8 8 0 0 1-8-8c0-7 6-10.5 18-10 .5 12.5-4 18-10 18zM7 25c3.5-5.5 7.5-9 12.5-11' fill='none' stroke='%23bccdab' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
 </head>
-<body class="page-checkout">
+<body class="page-success">
   <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
 
   <div class="topbar">
@@ -68,8 +68,8 @@
                 <div>
                   <p class="mega__title">Theo loại cây</p>
                   <ul class="mega__list">
-                    <li><a href="san-pham.html">Cây trong nhà <span>17</span></a></li>
-                    <li><a href="san-pham.html">Cây văn phòng <span>17</span></a></li>
+                    <li><a href="san-pham.html">Cây trong nhà <span>7</span></a></li>
+                    <li><a href="san-pham.html">Cây văn phòng <span>6</span></a></li>
                     <li><a href="san-pham.html">Sen đá &amp; xương rồng <span>7</span></a></li>
                     <li><a href="san-pham.html">Bonsai nghệ thuật <span>3</span></a></li>
                     <li><a href="san-pham.html">Cây treo <span>5</span></a></li>
@@ -96,7 +96,7 @@
                   </ul>
                 </div>
                 <a class="mega__feature" href="chi-tiet.html">
-                  <img src="images/monstera-room.jpg" alt="Monstera đặt cạnh ghế trắng trong phòng khách" loading="lazy">
+                  <img src="../images/monstera-room.jpg" alt="Monstera đặt cạnh ghế trắng trong phòng khách" loading="lazy">
                   <span class="mega__feature-body">
                     <span>Bộ sưu tập Thu Đông</span>
                     <strong>Monstera &amp; những người bạn lá lớn</strong>
@@ -117,147 +117,58 @@
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input type="search" name="q" placeholder="Tìm cây, chậu…" aria-label="Tìm kiếm sản phẩm">
         </div>
-        <a href="dang-nhap.html" class="icon-btn icon-btn--account" aria-label="Tài khoản"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
-        <a href="dang-nhap.html" class="icon-btn" aria-label="Danh sách yêu thích (2)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.4-9.2C1.2 7.9 3.4 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.6 0 5.8 3.4 4.4 6.8-1.9 4.6-9.4 9.2-9.4 9.2z"/></svg><span class="count">2</span></a>
+        <a href="tai-khoan.html" class="header-user" aria-label="Tài khoản của Thu Hà"><span class="avatar">TH</span><span class="header-user__name">Thu Hà</span></a>
+        <a href="../index.html" class="header-logout" aria-label="Đăng xuất" title="Đăng xuất"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg><span>Đăng xuất</span></a>
         <a href="gio-hang.html" class="icon-btn" aria-label="Giỏ hàng (3 sản phẩm)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9L5 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="count">3</span></a>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-hero page-hero--slim page-hero--center">
-      <div class="container">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="gio-hang.html">Giỏ hàng</a></li>
-          <li><span aria-current="page">Thanh toán</span></li>
-        </ol>
-        <h1>Thanh toán</h1>
-        <ol class="checkout-steps">
+    <section class="success">
+      <div class="container container--narrow">
+        <ol class="checkout-steps" style="margin: 0 0 56px">
           <li class="is-done"><b><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg></b>Giỏ hàng</li>
-          <li class="is-current"><b>2</b>Thanh toán</li>
-          <li><b>3</b>Hoàn tất</li>
+          <li class="is-done"><b><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg></b>Thanh toán</li>
+          <li class="is-current"><b>3</b>Hoàn tất</li>
         </ol>
+
+        <div class="success__check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg></div>
+        <h1>Cảm ơn bạn, cây đang <em>lên đường</em>!</h1>
+        <p class="lede">Đơn hàng đã được ghi nhận. Thợ vườn đang sang chậu và chuẩn bị cây cho bạn. Tin nhắn xác nhận sẽ được gửi qua Zalo và SMS trong vài phút tới.</p>
+
+        <div class="order-box">
+          <div><small>Mã đơn hàng</small><strong>#LV-261112-0428</strong></div>
+          <div><small>Ngày đặt</small><strong>12/11/2026</strong></div>
+          <div><small>Tổng thanh toán</small><strong>1.404.000₫</strong></div>
+          <div><small>Dự kiến giao</small><strong>Hôm nay, 12–16 giờ</strong></div>
+        </div>
+
+        <ol class="timeline-h">
+          <li class="is-done">Đã xác nhận<small>10:42</small></li>
+          <li class="is-done">Đang sang chậu<small>Thợ vườn: anh Tâm</small></li>
+          <li>Đang giao<small>Dự kiến 13:30</small></li>
+          <li>Đã nhận cây<small>Bảo hành bắt đầu</small></li>
+        </ol>
+
+        <div class="success__actions">
+          <a href="cham-soc.html" class="btn btn--lg"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg> Đọc cẩm nang chăm cây</a>
+          <a href="lich-su.html" class="btn btn--outline btn--lg">Xem lịch sử mua hàng</a>
+        </div>
       </div>
     </section>
 
-    <section class="section section--tight">
-      <div class="container checkout">
-        <div>
-          <div class="form-card">
-            <div class="form-card__head"><b>1</b><h2>Thông tin liên hệ</h2><a href="dang-nhap.html">Đã có tài khoản?</a></div>
-            <div class="form-grid">
-              <div class="field"><label for="name">Họ và tên</label><input class="input" id="name" type="text" autocomplete="name" placeholder="Nguyễn Văn An"></div>
-              <div class="field"><label for="phone">Số điện thoại</label><input class="input" id="phone" type="tel" autocomplete="tel" placeholder="09xx xxx xxx"></div>
-              <div class="field span-2"><label for="email">Email nhận hóa đơn</label><input class="input" id="email" type="text" autocomplete="email" placeholder="ban@email.com"></div>
-              <label class="check span-all"><input type="checkbox" checked> Gửi cho tôi lịch nhắc tưới cây và ưu đãi qua Zalo</label>
-            </div>
-          </div>
-
-          <div class="form-card">
-            <div class="form-card__head"><b>2</b><h2>Địa chỉ giao hàng</h2></div>
-            <div class="form-grid form-grid--3">
-              <div class="field">
-                <label for="city">Tỉnh / Thành phố</label>
-                <select class="select" id="city">
-                  <option value="hcm" selected>TP. Hồ Chí Minh</option>
-                  <option value="hn">Hà Nội</option>
-                  <option value="dn">Đà Nẵng</option>
-                  <option value="bd">Bình Dương</option>
-                  <option value="dna">Đồng Nai</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="district">Quận / Huyện</label>
-                <select class="select" id="district">
-                  <option value="">Chọn quận</option>
-                  <option>Quận 1</option><option>Quận 3</option><option>Quận 7</option>
-                  <option>Quận 10</option><option>Bình Thạnh</option><option>Phú Nhuận</option>
-                  <option>Gò Vấp</option><option>Tân Bình</option><option>TP. Thủ Đức</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="ward">Phường / Xã</label>
-                <input class="input" id="ward" type="text" placeholder="Phường…">
-              </div>
-              <div class="field span-all"><label for="address">Số nhà, tên đường</label><input class="input" id="address" type="text" autocomplete="street-address" placeholder="Ví dụ: 12 Nguyễn Đình Chiểu, tầng 5, căn hộ 5.02"></div>
-              <div class="field span-all"><label for="note">Ghi chú cho người giao</label><textarea class="textarea" id="note" placeholder="Ví dụ: gọi trước 15 phút, để cây ở quầy lễ tân…" style="min-height: 100px"></textarea></div>
-            </div>
-          </div>
-
-          <div class="form-card">
-            <div class="form-card__head"><b>3</b><h2>Thời gian nhận cây</h2></div>
-            <div class="slots" role="radiogroup" aria-label="Khung giờ giao hàng">
-              <label class="choice"><input type="radio" name="slot" value="2h"><span class="choice__box"><strong>Hỏa tốc</strong><small>Trong 2 giờ</small></span></label>
-              <label class="choice"><input type="radio" name="slot" value="morning"><span class="choice__box"><strong>8:00 – 12:00</strong><small>Hôm nay</small></span></label>
-              <label class="choice"><input type="radio" name="slot" value="afternoon" checked><span class="choice__box"><strong>12:00 – 16:00</strong><small>Hôm nay</small></span></label>
-              <label class="choice"><input type="radio" name="slot" value="evening"><span class="choice__box"><strong>16:00 – 20:00</strong><small>Hôm nay</small></span></label>
-            </div>
-          </div>
-
-          <div class="form-card">
-            <div class="form-card__head"><b>4</b><h2>Phương thức thanh toán</h2></div>
-            <div class="pay-list">
-              <div class="pay">
-                <label><input type="radio" name="pay" value="cod" checked><span><strong>Thanh toán khi nhận cây (COD)</strong><small>Kiểm tra cây trước, trả tiền sau</small></span><span class="pay__logo">COD</span></label>
-                <div class="pay__detail"><p>Bạn được mở hộp, kiểm tra lá, rễ và chậu trước khi thanh toán cho nhân viên giao hàng bằng tiền mặt hoặc quét mã.</p></div>
-              </div>
-              <div class="pay">
-                <label><input type="radio" name="pay" value="bank"><span><strong>Chuyển khoản ngân hàng</strong><small>Quét mã VietQR, xác nhận tự động</small></span><span class="pay__logo">QR</span></label>
-                <div class="pay__detail">
-                  <div class="bank">
-                    <div class="qr" role="img" aria-label="Mã QR chuyển khoản minh họa"></div>
-                    <dl>
-                      <div><dt>Ngân hàng</dt><dd>Vietcombank – CN Sài Gòn</dd></div>
-                      <div><dt>Chủ tài khoản</dt><dd>CÔNG TY TNHH LỤC VIÊN</dd></div>
-                      <div><dt>Số tài khoản</dt><dd>0071 0000 2468</dd></div>
-                      <div><dt>Nội dung</dt><dd>LV2611 + số điện thoại</dd></div>
-                    </dl>
-                  </div>
-                </div>
-              </div>
-              <div class="pay">
-                <label><input type="radio" name="pay" value="card"><span><strong>Thẻ tín dụng / ghi nợ</strong><small>Visa, Mastercard, JCB, Napas</small></span><span class="pay__logo pay__logo--card">CARD</span></label>
-                <div class="pay__detail">
-                  <div class="form-grid">
-                    <div class="field span-2"><label for="card-no">Số thẻ</label><input class="input" id="card-no" type="text" inputmode="numeric" autocomplete="off" placeholder="•••• •••• •••• ••••"></div>
-                    <div class="field"><label for="card-exp">Ngày hết hạn</label><input class="input" id="card-exp" type="text" autocomplete="off" placeholder="MM / YY"></div>
-                    <div class="field"><label for="card-cvc">CVC</label><input class="input" id="card-cvc" type="text" inputmode="numeric" autocomplete="off" placeholder="•••"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="pay">
-                <label><input type="radio" name="pay" value="momo"><span><strong>Ví MoMo</strong><small>Chuyển đến ứng dụng để xác nhận</small></span><span class="pay__logo pay__logo--momo">MoMo</span></label>
-                <div class="pay__detail"><p>Sau khi bấm “Đặt hàng”, bạn sẽ nhận mã QR để quét bằng ứng dụng MoMo. Hoàn tiền 5% tối đa 30.000₫ cho đơn đầu tiên.</p></div>
-              </div>
-            </div>
+    <section class="section section--tight section--cream">
+      <div class="container">
+        <div class="cta-band">
+          <span class="eyebrow">Quà tặng cho bạn</span>
+          <h2>Giới thiệu bạn bè, cả hai cùng nhận <em>50.000₫</em></h2>
+          <p>Chia sẻ mã <strong style="color: var(--c-gold)">BANXANH</strong> — bạn bè giảm 50.000₫ cho đơn đầu tiên, bạn nhận 50.000₫ vào ví điểm thưởng.</p>
+          <div class="cta-band__actions">
+            <a href="index.html" class="btn btn--light"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8S10.5 3.5 8 4.2 7.5 8 12 8zM12 8s1.5-4.5 4-3.8.5 3.8-4 3.8z"/></svg> Chia sẻ mã ngay</a>
+            <a href="index.html" class="btn btn--ghost-light">Về trang chủ</a>
           </div>
         </div>
-
-        <aside class="summary" aria-label="Đơn hàng của bạn">
-          <h2>Đơn hàng</h2>
-          <ul class="order-mini">
-            <li><span class="order-mini__img"><img src="images/monstera-hold.jpg" alt="Monstera Deliciosa"><b>1</b></span><span><strong>Monstera Deliciosa</strong><small>Vừa · Gốm men trắng</small></span><span>570.000₫</span></li>
-            <li><span class="order-mini__img"><img src="images/snake.jpg" alt="Lưỡi Hổ Xanh"><b>2</b></span><span><strong>Lưỡi Hổ Xanh</strong><small>Vừa · Chậu đất nung</small></span><span>640.000₫</span></li>
-            <li><span class="order-mini__img"><img src="images/succulent-pots.jpg" alt="Combo sen đá"><b>1</b></span><span><strong>Combo 6 Sen Đá</strong><small>Chậu đất nung mini</small></span><span>350.000₫</span></li>
-          </ul>
-
-          <dl class="summary__rows" style="margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--c-line-strong)">
-            <div class="summary__row"><dt>Tạm tính</dt><dd>1.560.000₫</dd></div>
-            <div class="summary__row summary__row--discount"><dt>Mã XANHMOI</dt><dd>−156.000₫</dd></div>
-            <div class="summary__row"><dt>Giao hàng tiêu chuẩn</dt><dd>Miễn phí</dd></div>
-            <div class="summary__row"><dt>Gói quà &amp; thiệp</dt><dd>Miễn phí</dd></div>
-          </dl>
-
-          <div class="summary__total">
-            <span>Tổng thanh toán</span>
-            <div><strong>1.404.000₫</strong><small>Đã bao gồm VAT</small></div>
-          </div>
-
-          <a href="dat-hang-thanh-cong.html" class="btn btn--clay btn--lg btn--block"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Đặt hàng</a>
-          <p class="agree">Bằng việc đặt hàng, bạn đồng ý với <a href="lien-he.html">Điều khoản dịch vụ</a> và <a href="lien-he.html">Chính sách bảo hành</a> của Lục Viên.</p>
-          <a href="gio-hang.html" class="link-arrow" style="margin-top: 18px"><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Quay lại giỏ hàng</a>
-        </aside>
       </div>
     </section>
   </main>
@@ -309,7 +220,7 @@
             <li><a href="cham-soc.html">Cẩm nang chăm cây</a></li>
             <li><a href="lien-he.html">Chính sách giao hàng</a></li>
             <li><a href="lien-he.html">Bảo hành 30 ngày</a></li>
-            <li><a href="dang-nhap.html">Tra cứu đơn hàng</a></li>
+            <li><a href="lich-su.html">Tra cứu đơn hàng</a></li>
             <li><a href="lien-he.html">Câu hỏi thường gặp</a></li>
           </ul>
         </div>

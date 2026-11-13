@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pages.css">
 </head>
-<body class="page-auth" id="thanh-toan">
+<body class="page-auth">
   <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
 
   <div class="topbar">
@@ -68,8 +68,8 @@
                 <div>
                   <p class="mega__title">Theo loại cây</p>
                   <ul class="mega__list">
-                    <li><a href="san-pham.html">Cây trong nhà <span>17</span></a></li>
-                    <li><a href="san-pham.html">Cây văn phòng <span>17</span></a></li>
+                    <li><a href="san-pham.html">Cây trong nhà <span>7</span></a></li>
+                    <li><a href="san-pham.html">Cây văn phòng <span>6</span></a></li>
                     <li><a href="san-pham.html">Sen đá &amp; xương rồng <span>7</span></a></li>
                     <li><a href="san-pham.html">Bonsai nghệ thuật <span>3</span></a></li>
                     <li><a href="san-pham.html">Cây treo <span>5</span></a></li>
@@ -119,12 +119,13 @@
         </div>
         <a href="dang-nhap.html" class="icon-btn icon-btn--account" aria-label="Tài khoản"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
         <a href="dang-nhap.html" class="icon-btn" aria-label="Danh sách yêu thích (2)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.4-9.2C1.2 7.9 3.4 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.6 0 5.8 3.4 4.4 6.8-1.9 4.6-9.4 9.2-9.4 9.2z"/></svg><span class="count">2</span></a>
-        <a href="gio-hang.html" class="icon-btn" aria-label="Giỏ hàng (3 sản phẩm)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9L5 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="count">3</span></a>
+        <a href="dang-nhap.html#gio-hang" class="icon-btn" aria-label="Giỏ hàng (cần đăng nhập)"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9L5 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg></a>
       </div>
     </div>
   </header>
 
   <main id="main" class="auth">
+    <span id="gio-hang" class="auth-target"></span><span id="thanh-toan" class="auth-target"></span><span id="lich-su" class="auth-target"></span>
     <div class="auth__visual">
       <img src="images/jungle.jpg" alt="Nhà kính phủ kín cây nhiệt đới xanh mướt" width="1200" height="1500">
       <div class="auth__quote">
@@ -135,42 +136,36 @@
 
     <div class="auth__panel">
       <div class="auth__box">
-        <p class="auth__notice">Bạn cần đăng nhập để tiếp tục thanh toán.</p>
+        <p class="auth__notice auth__notice--cart">Bạn cần đăng nhập để thêm sản phẩm vào giỏ hàng.</p>
+        <p class="auth__notice auth__notice--pay">Bạn cần đăng nhập để tiếp tục thanh toán.</p>
+        <p class="auth__notice auth__notice--hist">Bạn cần đăng nhập để xem lịch sử mua hàng.</p>
 
         <div class="auth__tabs">
-          <span class="go go--home">
-            <a href="dang-nhap.html" class="is-active" aria-current="page">Đăng nhập</a>
-            <a href="dang-ky.html">Tạo tài khoản</a>
-          </span>
-          <span class="go go--pay">
-            <a href="dang-nhap.html#thanh-toan" class="is-active" aria-current="page">Đăng nhập</a>
-            <a href="dang-ky.html#thanh-toan">Tạo tài khoản</a>
-          </span>
+          <span class="go go--home"><a href="dang-nhap.html" class="is-active" aria-current="page">Đăng nhập</a>
+            <a href="dang-ky.html">Tạo tài khoản</a></span>
+            <span class="go go--cart"><a href="dang-nhap.html#gio-hang" class="is-active" aria-current="page">Đăng nhập</a>
+            <a href="dang-ky.html#gio-hang">Tạo tài khoản</a></span>
+            <span class="go go--pay"><a href="dang-nhap.html#thanh-toan" class="is-active" aria-current="page">Đăng nhập</a>
+            <a href="dang-ky.html#thanh-toan">Tạo tài khoản</a></span>
+            <span class="go go--hist"><a href="dang-nhap.html#lich-su" class="is-active" aria-current="page">Đăng nhập</a>
+            <a href="dang-ky.html#lich-su">Tạo tài khoản</a></span>
         </div>
 
         <div class="auth__form auth__form--login">
           <h1>Chào bạn <em>trở lại</em></h1>
-          <p>Đăng nhập để xem đơn hàng và lịch chăm cây của bạn.</p>
+          <p>Đăng nhập để mua hàng, xem đơn và thông tin khách hàng của bạn.</p>
           <div class="auth__fields">
-            <div class="field"><label for="l-email">Email hoặc số điện thoại</label><input class="input" id="l-email" type="text" autocomplete="username" placeholder="ban@email.com"></div>
-            <div class="field"><label for="l-pass">Mật khẩu</label><input class="input" id="l-pass" type="password" autocomplete="current-password" placeholder="••••••••"></div>
+            <div class="field"><label for="l-email">Email hoặc số điện thoại</label><input class="input" id="l-email" type="text" autocomplete="username" placeholder="ban@email.com" value="thuha@example.com"></div>
+            <div class="field"><label for="l-pass">Mật khẩu</label><input class="input" id="l-pass" type="password" autocomplete="current-password" placeholder="••••••••" value="123456"></div>
             <div class="auth__row">
               <label class="check"><input type="checkbox" checked> Ghi nhớ đăng nhập</label>
               <a href="lien-he.html">Quên mật khẩu?</a>
             </div>
-            <span class="go go--home"><a href="index.html" class="btn btn--lg btn--block">Đăng nhập <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
-            <span class="go go--pay"><a href="thanh-toan.html" class="btn btn--lg btn--block">Đăng nhập <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
-          </div>
-          <p class="divider">hoặc tiếp tục với</p>
-          <div class="social-login">
-            <span class="go go--home">
-              <a href="index.html" class="btn btn--outline"><span class="g-dot" aria-hidden="true"></span> Google</a>
-              <a href="index.html" class="btn btn--outline"><span class="f-dot" aria-hidden="true">f</span> Facebook</a>
-            </span>
-            <span class="go go--pay">
-              <a href="thanh-toan.html" class="btn btn--outline"><span class="g-dot" aria-hidden="true"></span> Google</a>
-              <a href="thanh-toan.html" class="btn btn--outline"><span class="f-dot" aria-hidden="true">f</span> Facebook</a>
-            </span>
+            <span class="go go--home"><a href="da-dang-nhap/tai-khoan.html" class="btn btn--lg btn--block">Đăng nhập <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
+            <span class="go go--cart"><a href="da-dang-nhap/gio-hang.html" class="btn btn--lg btn--block">Đăng nhập <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
+            <span class="go go--pay"><a href="da-dang-nhap/thanh-toan.html" class="btn btn--lg btn--block">Đăng nhập <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
+            <span class="go go--hist"><a href="da-dang-nhap/lich-su.html" class="btn btn--lg btn--block">Đăng nhập <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
+            <p class="auth__demo">Tài khoản mẫu đã điền sẵn — bấm Đăng nhập để xem thông tin khách hàng.</p>
           </div>
         </div>
       </div>
@@ -224,7 +219,7 @@
             <li><a href="cham-soc.html">Cẩm nang chăm cây</a></li>
             <li><a href="lien-he.html">Chính sách giao hàng</a></li>
             <li><a href="lien-he.html">Bảo hành 30 ngày</a></li>
-            <li><a href="dang-nhap.html">Tra cứu đơn hàng</a></li>
+            <li><a href="dang-nhap.html#lich-su">Tra cứu đơn hàng</a></li>
             <li><a href="lien-he.html">Câu hỏi thường gặp</a></li>
           </ul>
         </div>
